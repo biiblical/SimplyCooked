@@ -1,0 +1,94 @@
+{
+    "recipes": [
+        {
+            "name": "RecipeName",
+            "filePath": "PathToRecipe.html",
+            "ingredients": [
+              "Ingredient1",
+              "Ingredient2",
+              "Ingredient3",
+              "Ingredient4"
+            ],
+            "appliances": [
+              "Appliance1",
+              "Appliance2"
+            ],
+            "cuisine": "CuisineType",
+            "tags": ["Tag1", "Tag2"],
+            "cookingTime": "TimeInMinutes",
+            "difficulty": "DifficultyLevel",
+            "glutenFree": "yes/no",
+            "lactoseFree": "yes/no",
+            "vegetarian": "yes/no",
+            "served": "ServingTemperature",
+            "spicy": "//SpicinessLevel,  // Should be a numerical value from 1 to 3",
+            "price": "//CostLevel  // Should be a numerical value from 1 to 3"
+          },
+      {
+        
+        "name": "Bulgarian Stuffed Peppers",
+        "filePath": "Balkanrecipe.html",
+        "ingredients": [
+          "Peppers",
+          "Risotto rice",
+          "Onions",
+          "Carrots",
+          "Sunflower oil",
+          "Salt","Pepper",
+          "Chubritsa", "Eggs", 
+          "Yogurt", "Flour", "Lemon"
+        ],
+
+        "appliances": [
+            "Oven",
+            "Stove"
+          ],
+
+        "cuisine": "Balkan",
+        "tags": ["Dinner", "Healthy"],
+        "cookingTime": "30 minutes",
+        "difficulty": "Intermediate",
+        "glutenFree": "yes",
+        "lactoseFree": "no",
+        "vegetarian": "yes",
+        "served": "hot",
+        "spicy": "2",
+        "price": "1"
+      },
+      {
+      "name": "Chicken Tikka Masala",
+      "filePath": "Indianrecipe.html",
+      "ingredients": [
+        "Chicken",
+        "Garlic",
+        "Ginger",
+        "Masala",
+        "Coriander",
+        "Turmeric","Cumin",
+        "tomato paste", "yogurt", 
+        "ghee", "red chiles", "cream"
+      ],
+
+      "appliances": [
+          "Oven",
+          "Stove"
+        ],
+
+      "cuisine": "Indian",
+      "tags": ["Dinner", "Healthy","Protein"],
+      "cookingTime": "30 minutes",
+      "difficulty": "Intermediate",
+      "glutenFree": "yes",
+      "lactoseFree": "no",
+      "vegetarian": "no",
+      "served": "hot",
+      "spicy": "2",
+      "price": "1",
+      "recipeLink": "Indianrecipe.html",
+      "image": "img/Indian.jpg"
+
+    }
+
+    ]
+  }
+  

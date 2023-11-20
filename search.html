@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SimplyCooked</title>
+
+    <style>
+
+      a 
+      { 
+        margin-top: 10px;
+        text-decoration: none; 
+        color: black;
+      }
+
+      label, select, button {
+        margin-bottom: 10px;
+        display: inline-block;
+        margin-right: 0px;
+      }
+  
+      select, button {
+        width: 150px;
+      }
+  
+      button {
+        padding: 5px;
+      }
+  
+      ul {
+        text-decoration: none;
+        text-align: center;
+        list-style: none;
+        display:flex;
+        flex-wrap: wrap;
+        margin: 0; /* Remove default margin */
+
+      }
+  
+      li {
+      background-color: burlywood;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 5px solid #ddd;
+      box-sizing: border-box;
+      text-align: center;
+      border-radius: 8px; /* Add border-radius for rounded corners */
+      }
+  
+      li img {
+        display: block; /* Ensure images don't affect text alignment */
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;            /* Footer height */
+      }
+
+    </style>
+
+
+</head>
+<center>
+<body>
+    <b class="logo-image"><img src="logoresize.jpg" alt="Avatar"> </b>
+    <div class="topnav">
+        <a href="index.html">HOME</a>
+        <a href="cultural.html">CULTURAL</a>
+        <a href="forum.html">FORUM</a>
+        <a  href="contact.html">CONTACT</a>
+        <div class="login-container">
+            <form action="/action_page.php">
+                <a class="active" height="25" style="margin-right: 10px !important;" href="search.html"><img height="25" src="img/search.png" alt="Search icon"></a>
+                <input type="text" placeholder="Username" name="username">
+                <input type="text" placeholder="Password" name="psw">
+                <button style="margin-left: 10px !important;" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+    <h1>Recipe Search</h1>
+    <hr>
+    <label for="cuisine">Cuisine:</label>
+    <select id="cuisine">
+      <option value="">All Cuisines</option>
+    </select>
+  
+    <label for="tags">Tags:</label>
+    <select id="tags">
+      <option value="">All Tags</option>
+    </select>
+  
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+      <option value="">All Difficulty Levels</option>
+      <option value="1">Easy</option>
+      <option value="2">Intermediate</option>
+      <option value="3">Expert</option>
+    </select>
+  
+    <label for="vegetarian">Vegetarian:</label>
+    <select id="vegetarian">
+      <option value="">All</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  
+    <label for="spicy">Spiciness Level:</label>
+    <select id="spicy">
+      <option value="">All Levels</option>
+      <option value="1">🌶️</option>
+      <option value="2">🌶️🌶️</option>
+      <option value="3">🌶️🌶️🌶️</option>
+    </select>
+  
+    <label for="spicy">Price:</label>
+    <select id="spicy">
+      <option value="">All Levels</option>
+      <option value="1">$</option>
+      <option value="2">$$</option>
+      <option value="3">$$$</option>
+    </select>
+    <button onclick="filterRecipes()">Search</button>
+
+    <hr>
+
+    <ul id="recipeList">
+      <!-- The filtered recipe list will be displayed here -->
+    </ul>
+  
+    <script>
+
+        async function fetchRecipes() {
+              try {
+                const response = await fetch('path/to/recipes.json'); // Replace with the actual path to your JSON file
+                const data = await response.json();
+                return data.recipes;
+              } catch (error) {
+                console.error('Error fetching recipes:', error);
+                return [];
+              }
+            }
+
+
+      const recipes = [
+        {
+          name: "Bulgarian Stuffed Peppers",
+          path: "testpath1",
+          cuisine: "Balkan",
+          tags: ["Balkan", "Exoctic"],
+          difficulty: "Easy",
+          vegetarian: "yes",
+          image: "img/Bulgarian.jpeg",
+          recipeLink: "Balkanrecipe.html",
+          spicy: 2
+        },
+        {
+          name: "Chicken Tikka Masala",
+          path: "testpath2",
+          cuisine: "Indian",
+          tags: ["Indian", "High protein"],
+          difficulty: "Intermediate",
+          vegetarian: "no",
+          image: "img/Indian.jpg",
+          recipeLink: "Indianrecipe.html",
+          spicy: 3
+        },
+                {
+          name: "Spaghetti Bolognese",
+          path: "testpath3",
+          cuisine: "Italian",
+          tags: ["Pasta", "Tomato Sauce"],
+          difficulty: "Intermediate",
+          vegetarian: "no",
+          image: "img/SpaghettiBolognese.jpeg",
+          recipeLink: "Italianrecipe.html",
+          spicy: 1
+        },
+        {
+          name: "Vegetable Stir-Fry",
+          path: "testpath4",
+          cuisine: "Asian",
+          tags: ["Vegetables", "Stir-Fry"],
+          difficulty: "Easy",
+          vegetarian: "yes",
+          image: "img/VegetableStirFry.jpeg",
+          recipeLink: "Asianrecipe.html",
+          spicy: 2
+        },
+        {
+          name: "Classic Margherita Pizza",
+          path: "testpath5",
+          cuisine: "Italian",
+          tags: ["Pizza", "Tomato", "Mozzarella"],
+          difficulty: "Easy",
+          vegetarian: "yes",
+          image: "img/MargheritaPizza.jpeg",
+          recipeLink: "Italianrecipe.html",
+          spicy: 1
+        },  
+        {
+          name: "Grilled Salmon",
+          path: "testpath6",
+          cuisine: "Seafood",
+          tags: ["Salmon", "Grilled"],
+          difficulty: "Intermediate",
+          vegetarian: "no",
+          image: "img/GrilledSalmon.jpeg",
+          recipeLink: "Seafoodrecipe.html",
+          spicy: 1
+        },
+        {
+          name: "Mushroom Risotto",
+          path: "testpath7",
+          cuisine: "Italian",
+          tags: ["Risotto", "Mushrooms"],
+          difficulty: "Intermediate",
+          vegetarian: "yes",
+          image: "img/MushroomRisotto.jpeg",
+          recipeLink: "Italianrecipe.html",
+          spicy: 1
+        },
+        {
+          name: "Tofu Stir-Fry",
+          path: "testpath8",
+          cuisine: "Asian",
+          tags: ["Tofu", "Stir-Fry"],
+          difficulty: "Easy",
+          vegetarian: "yes",
+          image: "img/TofuStirFry.jpeg",
+          recipeLink: "Asianrecipe.html",
+          spicy: 2
+        },
+
+            {
+      name: "Chicken Alfredo Pasta",
+      path: "testpath9",
+      cuisine: "Italian",
+      tags: ["Chicken", "Pasta", "Alfredo"],
+      difficulty: "Intermediate",
+      vegetarian: "no",
+      image: "img/ChickenAlfredoPasta.jpeg",
+      recipeLink: "Italianrecipe.html",
+      spicy: 1
+    },
+    {
+      name: "Caprese Salad",
+      path: "testpath10",
+      cuisine: "Italian",
+      tags: ["Salad", "Tomato", "Mozzarella", "Basil"],
+      difficulty: "Easy",
+      vegetarian: "yes",
+      image: "img/CapreseSalad.jpeg",
+      recipeLink: "Italianrecipe.html",
+      spicy: 1
+    },
+    {
+      name: "Shrimp Pad Thai",
+      path: "testpath11",
+      cuisine: "Asian",
+      tags: ["Shrimp", "Noodles", "Pad Thai"],
+      difficulty: "Intermediate",
+      vegetarian: "no",
+      image: "img/ShrimpPadThai.jpeg",
+      recipeLink: "Asianrecipe.html",
+      spicy: 2
+    },
+    {
+      name: "Vegan Buddha Bowl",
+      path: "testpath12",
+      cuisine: "Plant-based",
+      tags: ["Vegan", "Bowl", "Quinoa", "Vegetables"],
+      difficulty: "Easy",
+      vegetarian: "yes",
+      image: "img/VeganBuddhaBowl.jpeg",
+      recipeLink: "Plantbasedrecipe.html",
+      spicy: 1
+    },
+    {
+      name: "BBQ Pulled Pork Sandwich",
+      path: "testpath13",
+      cuisine: "American",
+      tags: ["Pulled Pork", "BBQ", "Sandwich"],
+      difficulty: "Intermediate",
+      vegetarian: "no",
+      image: "img/BBQPulledPorkSandwich.jpeg",
+      recipeLink: "Americanrecipe.html",
+      spicy: 2
+    },
+    {
+      name: "Chocolate Chip Cookies",
+      path: "testpath14",
+      cuisine: "Dessert",
+      tags: ["Cookies", "Chocolate Chip", "Dessert"],
+      difficulty: "Easy",
+      vegetarian: "yes",
+      image: "img/ChocolateChipCookies.jpeg",
+      recipeLink: "Dessertrecipe.html",
+      spicy: 1
+    },
+      ]; 
+
+
+  
+      function populateDropdown(elementId, options) {
+        const dropdown = document.getElementById(elementId);
+        options.forEach(option => {
+          const optionElement = document.createElement("option");
+          optionElement.value = option;
+          optionElement.textContent = option;
+          dropdown.appendChild(optionElement);
+        });
+      }
+  
+      const cuisines = [...new Set(recipes.map(recipe => recipe.cuisine))];
+      const tags = [...new Set(recipes.flatMap(recipe => recipe.tags))];
+      const difficultyLevels = [...new Set(recipes.map(recipe => recipe.difficulty))];
+  
+      //populateDropdown("cuisine", cuisines);
+      populateDropdown("tags", tags);
+      //populateDropdown("difficulty", difficultyLevels);
+  
+      function filterRecipes() {
+          
+
+        const selectedCuisine = document.getElementById("cuisine").value;
+        const selectedTags = document.getElementById("tags").value;
+        const selectedDifficulty = document.getElementById("difficulty").value;
+        const selectedVegetarian = document.getElementById("vegetarian").value;
+        const selectedSpicy = document.getElementById("spicy").value;
+  
+        const filteredRecipes = recipes.filter(recipe => {
+          return (
+            (selectedCuisine === "" || recipe.cuisine === selectedCuisine) &&
+            (selectedTags === "" || recipe.tags.includes(selectedTags)) &&
+            (selectedDifficulty === "" || recipe.difficulty === selectedDifficulty) &&
+            (selectedVegetarian === "" || recipe.vegetarian === selectedVegetarian) &&
+            (selectedSpicy === "" || recipe.spicy.toString() === selectedSpicy)
+          );
+        });
+  
+        displayRecipes(filteredRecipes);
+      }
+  
+      function displayRecipes(filteredRecipes) {
+      const recipeList = document.getElementById("recipeList");
+      recipeList.innerHTML = "";
+
+      filteredRecipes.forEach(recipe => {
+        const listItem = document.createElement("li");
+
+        const box = document.createElement("a");
+        box.href = recipe.recipeLink;
+        listItem.appendChild(box);
+
+        // Create image element
+        const imageElement = document.createElement("img");
+        imageElement.src = recipe.image;
+        imageElement.alt = `${recipe.name} Image`;
+        imageElement.style.width = "175px";  // Adjust the width as needed
+        box.appendChild(imageElement);
+
+        // Create link element
+        const linkElement = document.createElement("a");
+        linkElement.href = recipe.recipeLink;
+        linkElement.textContent = recipe.name;
+        box.appendChild(linkElement);
+
+        recipeList.appendChild(listItem);
+      });
+    }
+  </script>
+  
+
+
+
+  </body>
+  <footer id="footer">
+    <small> <center>&copy;Copyright 2022, SimplyCooked - 2023, ALY </center> </small>
+  </footer>
+</center>
+
+</html>
