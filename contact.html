@@ -34,6 +34,7 @@
             <option value="belgium">Belgium</option>
             <option value="costa rica">Costa Rica</option>
             <option value="denmark">Denmark</option>
+            <option value="egypt">Egypt</option>
             <option value="england">England</option>
             <option value="finland">Finland</option>
             <option value="germany">Germany</option>
@@ -51,7 +52,7 @@
             <option value="spain">Spain</option>
             <option value="taiwan">Taiwan</option>
             <option value="usa">USA</option>
-            <option value="ukrain">Ukrain</option>
+            <option value="ukrain">Ukraine</option>
             <option value="venezuela">Venezuela</option>
             <option value="yemen">Yemen</option>
             <option value="zimbabwe">Zimbabwe</option>
@@ -59,8 +60,19 @@
 
           </select>
           <label for="recipe">Recipe</label>
+          <br /><br />
+          <form action="/action_page.php" 
+          enctype="multipart/form-data"> 
+    
+          <input type="file" id="myfile" 
+              name="myfile" multiple="multiple" /> 
+            
+          <br /><br />  
+          </form> 
           <textarea id="subject" name="subject" placeholder="Share your favourite recipe with us.." style="height:200px"></textarea>
+        
          
+
           <label for="comments">Comments</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
