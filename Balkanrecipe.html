@@ -1,94 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>SimplyCooked</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: #E7BB2C;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
 
 </head>
+
 <body>
-    <b class="logo-image"><img src="logoresize.jpg" alt="Avatar"> </b>
-    <nav class="topnav">
-        <b class="logo-image"><img src="logo.jfif"> </b>
-        <a href="index.html">HOME</a>
-        <a href="cultural.html">CULTURAL</a>
-        <a href="forum.html">FORUM</a>
-        <a href="contact.html">CONTACT</a>
-    
-    </nav>
+    <header>
+        <b class="logo-image"><img src="logoresize.jpg" alt="Avatar"> </b>
+        <!-- Navigation bar goes here -->
+        <div class="topnav">
+            <a href="index.html">HOME</a>
+            <a href="cultural.html">CULTURAL</a>
+            <a href="forum.html">FORUM</a>
+            <a  href="contact.html">CONTACT</a>
+            <div class="login-container">
+                <form action="/action_page.php">
+                    <a height="25" style="margin-right: 10px !important;" href="search.html"><img height="25" src="img/search.png" alt="Search icon"></a>
+                    <input type="text" placeholder="Username" name="username">
+                    <input type="text" placeholder="Password" name="psw">
+                    <button style="margin-left: 10px !important;" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </header>
 
+    <main class="content-wrapper">
+        <article class="recipe">
+            <h1>Bulgarian Stuffed Peppers (Vegetarian Friendly)</h1>
+            <p class="description">Palneni Chushki or Bulgarian stuffed peppers, are often made for Christmas. This
+                Palneni Chushki recipe is made without meat, though many other Bulgarian stuffed peppers contain meat
+                and
+                other vegetables.</p>
+            <img src="https://www.chasingthedonkey.com/wp-content/uploads/2022/11/Bulgarian-Stuffed-Peppers-Recipe_IMG_3121.jpeg"
+                alt="Stuffed Peppers" class="main-image">
+            <br>
 
-    <div>
-        
-        <h2 style="color: #97B9B5"><center>Bulgarian Stuffed Peppers (Vegetarian Friendly) – Palneni Chushki Recipe</center></h2>
-        <center><img class="main_Image" src="https://www.chasingthedonkey.com/wp-content/uploads/2022/11/Bulgarian-Stuffed-Peppers-Recipe_IMG_3121.jpeg" style="height: 300px;"></center> 
-    </div>
-    <p style = "margin-left: 20px;"> Palneni Chushki or Bulgarian stuffed peppers, are often made for Christmas. This Palneni Chushki recipe is made without meat, though many other Bulgarian stuffed peppers contain meat and other vegetables. </p>
-    <br>
-        <h2 style = "margin-left: 30px; color: #E7BB2C";">Ingredients</h2>
-        <ul style = "margin-left: 30px;">                
-            <li>1 kg of peppers, Remove the tops and clean out the seeds</li><br>
-            <li>150 g risotto rice, rinced to remove excess starch </li><br>
-            <li>1 onion</li><br>
-            <li>1 carrot</li>
-            <br><li>4-6 tbsp. of sunflower oil (or other vegetable oil)</li><br>
-            <li>Salt and black pepper to taste</li><br>
-            <li>1/2 tsp chubritsa (Bulgarian spice), you can also subtitue with oregano</li><br>
-            <li>200 g of yogurt</li><br>
-            <li>2 eggs</li><br>
-            <li>1-2 tbsp. of flour</li><br>
-            <li>1 tsp. of lemon (if yogurt is not sour enough)</li><br>
-            
-        
-        </ul>
-        
-        <br>
-        <h2 style = "margin-left: 30px; color: #E7BB2C;">Preperation </h2>
-        
-        <h3 style = "margin-left: 40px; color: #97B9B5;">Preparing the peppers:</h3>
-
-       
-        <ul style = "margin-left: 30px;">
-            <br><li>Preheat the oven to 180-200°</li>
-            <br><li>Cut the onion and carrot into small pieces and fry them in the oil on moderate heat in a large frypan until soft</li>
-            <br><li>Add the rice and fry until it becomes “glassy.” Usually around 3-4 mins</li>
-            <br><li>Add salt and pepper to taste, along with the chubritsa to the rice</li>
-            <br><li>Add 150 ml of warm water (rice: water 1:1) and let the rice absorb the water on low heat</li>
-            <br><li>Prepare peppers; Make 2 or 3 fork marks on each pepper, and sprinkle a little salt inside them</li>
-            <br><li>Fill the peppers loosely with the rice mixture and Place them in an oven-proof dish</li>
-            <br><li>If you have rice left over, place it around the peppers in the dish and pour over 100 ml of water</li>
-            <br><li>Bake at 180-200° for 40 minutes</li>  
-
-            
-        </ul>
-        <br>
-        <h3 style = "margin-left: 40px; color: #97B9B5">Preparing the sauce(approx 5 mins before the peppers are ready):</h3>
-        
-        <ul style = "margin-left: 30px;">
-            <br><li>Mix the eggs, the yogurt, and the flour in a saucepan</li>
-            <br><li>Place it on a moderate heat on the stove</li>
-            <br><li>Stir continuously for 3-4 minutes until it thickens (Do not let it boil)</li>
- 
-        </ul>
-        <br>
-        <p style = "margin-left: 30px;">When the peppers are done, remove the dish from the oven, and serve it topped with the sauce</p>
-        
-        <br>
-        <center><img src="https://www.chasingthedonkey.com/wp-content/uploads/2022/11/Bulgarian-Stuffed-Peppers-Recipe_IMG_3066.jpeg.webp" width="400"></center>
-<br><br><br>
-<h2 style = "color: #B7C098;"><center>Bon Appetit! </center></h2>
+            <section class="recipe-section">
+                <h3>Ingredients</h3>
+                <ul class="ingredients">
+                    <li>1 kg of peppers, Remove the tops and clean out the seeds</li><br>
+                    <li>150 g risotto rice, rinced to remove excess starch </li><br>
+                    <li>1 onion</li><br>
+                    <li>1 carrot</li>
+                    <br>
+                    <li>4-6 tbsp. of sunflower oil (or other vegetable oil)</li><br>
+                    <li>Salt and black pepper to taste</li><br>
+                    <li>1/2 tsp chubritsa (Bulgarian spice), you can also subtitue with oregano</li><br>
+                    <li>200 g of yogurt</li><br>
+                    <li>2 eggs</li><br>
+                    <li>1-2 tbsp. of flour</li><br>
+                    <li>1 tsp. of lemon (if yogurt is not sour enough)</li><br>
+                </ul>
+            </section>
 
 
 
+            <section class="recipe-section">
+                <h2>Preparation</h2>
+                <h3>Preparing the peppers:</h3>
+                <ol class="instructions">
+                    <!-- Preparation steps -->
+                    <h4>Step 1</h4>
+                    <li>Preheat the oven to 180-200°.</li>
+                    <h4>Step 2</h4>
+                    <li>Cut the onion and carrot into small pieces and fry them in the oil on moderate heat in a large
+                        frypan
+                        until soft.
+                    </li>
+                    <h4>Step 3</h4>
+                    <li>Add the rice and fry until it becomes “glassy.” Usually around 3-4 mins.</li>
+                    <h4>Step 4</h4>
+                    <li>Add salt and pepper to taste, along with the chubritsa to the rice.</li>
+                    <h4>Step 5</h4>
+                    <li>Add 150 ml of warm water (rice: water 1:1) and let the rice absorb the water on low heat.</li>
+                    <h4>Step 6</h4>
+                    <li>Prepare peppers; Make 2 or 3 fork marks on each pepper, and sprinkle a little salt inside them.
+                    </li>
+                    <h4>Step 7</h4>
+                    <li>Fill the peppers loosely with the rice mixture and Place them in an oven-proof dish.</li>
+                    <h4>Step 8</h4>
+                    <li>Bake at 180-200° for 40 minutes.</li>
+
+                    <h3>Preparing the sauce(approx 5 mins before the peppers are ready):</h3>
+                    <h4>Step 9</h4>
+                    <li>Mix the eggs, the yogurt, and the flour in a saucepan.</li>
+                    <h4>Step 10</h4>
+                    <li>Place it on a moderate heat on the stove.</li>
+                    <h4>Step 11</h4>
+                    <li>Stir continuously for 3-4 minutes until it thickens. (Do not let it boil!)</li>
+                </ol>
+                <br>
+                <p>
+                    <center> When the peppers are done, remove the dish from the oven, and serve it topped with
+                        the sauce. </center>
+                </p>
+                <center><img
+                        src="https://www.chasingthedonkey.com/wp-content/uploads/2022/11/Bulgarian-Stuffed-Peppers-Recipe_IMG_3066.jpeg.webp"
+                        width="400"></center>
+                <br>
+
+                <h2 style="color: #777b68;">
+                    <center>Bon Appetit! </center>
+                </h2>
+            </section>
+        </article>
+    </main>
 
 
-      
     <footer>
         <small>&copy; Copyright 2022, SimplyCooked</small>
     </footer>
 
 
 </body>
+
 </html>
