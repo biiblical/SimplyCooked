@@ -1,7 +1,7 @@
 var defaultThreads = [
     {
         id: 1,
-        title: "Do you add salt and pepeper to everything?",
+        title: "Do you add salt and peppper to everything?",
         author: "Mahnoor",
         date: Date.now(),
         content: "Thread content",

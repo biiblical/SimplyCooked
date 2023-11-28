@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <title>SimplyCooked</title>
 
+    <style>
+         /* add to CSS style file */
+
+        /* CSS for the hover effect */
+        .column .hover-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s; /* Smooth transition effect */
+        }
+    
+        .column:hover .hover-image {
+            transform: scale(1.2); /* Increase size on hover */
+        }
+    </style>
 
     <script>
         // JavaScript for changing images on hover
