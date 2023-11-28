@@ -8,51 +8,48 @@
     <title>SimplyCooked</title>
 
     <style>
-        /* add to CSS style file */
+         /* add to CSS style file */
 
-       /* CSS for the hover effect */
-       .column .hover-image {
-           width: 100%;
-           height: 200px;
-           object-fit: cover;
-           transition: transform 0.5s; /* Smooth transition effect */
-       }
-   
-       .column:hover .hover-image {
-           transform: scale(1.2); /* Increase size on hover */
-       }
-   </style>
+        /* CSS for the hover effect */
+        .column .hover-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s; /* Smooth transition effect */
+        }
+    
+        .column:hover .hover-image {
+            transform: scale(1.2); /* Increase size on hover */
+        }
+    </style>
 
-   <script>
-       // JavaScript for changing images on hover
-       function toggleImage(element, images) {
-       let currentImageIndex = images.indexOf(element.src);
-       currentImageIndex = (currentImageIndex + 1) % images.length; // Toggle to the next image
-       element.src = images[currentImageIndex];
-   }
-   </script>
+    <script>
+        // JavaScript for changing images on hover
+        function toggleImage(element, images) {
+        let currentImageIndex = images.indexOf(element.src);
+        currentImageIndex = (currentImageIndex + 1) % images.length; // Toggle to the next image
+        element.src = images[currentImageIndex];
+    }
+    </script>
 
 </head>
 <body>
+
+    <nav class="topnav">
         <a href="index.html">HOME</a>
-        <a class="active" href="cultural.html">CULTURAL</a>
+        <a class="active" href="#cultural">CULTURAL</a>
+        <a href="dishes.html">DISHES</a>
+        <a href="dessert.html">DESSERT</a>
         <a href="forum.html">FORUM</a>
-        <a  href="contact.html">CONTACT</a>
-        <div class="login-container">
-            <form action="/action_page.php">
-                <a  height="25" style="margin-right: 10px !important;" href="search.html"><img height="25" src="img/search.png" alt="Search icon"></a>
-                <input type="text" placeholder="Username" name="username">
-                <input type="text" placeholder="Password" name="psw">
-                <button style="margin-left: 10px !important;" type="submit">Login</button>
-            </form>
-        </div>
-    </div>
+        <a href="contact.html">CONTACT</a>
+    
+    </nav>
 
 
     <div>
-        <h3 style = " color: #97B9B5;"><center>Balkan Cuisine</center></h3>
+        <center><img class="main_Image" src="https://www.nerdynaut.com/wp-content/uploads/2021/12/World-Cuisine-How-to-Easily-Find-Recipes-from-Other-Cultures.jpg" style="height: 300px;"></center> 
         
-        <h4 style = " color: #97B9B5;"><center>Choose from our variety of mouth-watering Balkan dishes and history</center></h4>
+        <h3 style = " color: #97B9B5;"><center>Choose from our variety of mouth-watering cultural dishes, infused with tradition and history</center></h4>
     </div>
 
 <hr>
@@ -61,9 +58,9 @@
 
     <div class="row">
         <div class="column">
-          <h4 style = " color: #E7BB2C;"><center>Recipe1</center></h4>
-          <p>Bulgarian Stuffed Peppers (Vegetarian Friendly) – Palneni Chushki Recipe</p>
-          <a href="Balkanrecipe.html">
+        <h4 style = " color: #E7BB2C;"><center>Bulgarian stuffed peppers</center></h4>
+        <p>Bulgarian Stuffed Peppers (Vegetarian Friendly) – Palneni Chushki Recipe</p>
+        <a href="Balkanrecipe.html">
             <img src="https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg" 
             class ="hover-image" onmouseover="toggleImage(this, ['https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg', 'https://chasingthedonkey.b-cdn.net/wp-content/uploads/2021/10/Turkish-Sausage-sucuk-and-egg_Depositphotos_55742119_S-900x600.jpeg','https://chasingthedonkey.b-cdn.net/wp-content/uploads/2019/05/Fis-paprikas-14-900x695.jpg'])">
             </a>
@@ -88,24 +85,24 @@
     </div>
 
 
-<div>
+    <div>
 
-</div>
+    </div>
 
-<hr>
+    <hr>
 
     <h4 style="color: #E7BB2C;"><center>Desserts</center></h4>
-    
+
         <div class="column">
             <h4 style="color: #E7BB2C;"><center>Dessert1</center></h4>
             <p>Try our Greek culinary masterpieces for meals you won’t soon forget!</p>
-             <a href="Greekrecipe.html">
+            <a href="Greekrecipe.html">
                 <img src="https://th.bing.com/th/id/R.2bdea2475ce3646f480d4e6bc7b77f72?rik=Kl71W8S64u3PFg&riu=http%3a%2f%2ffravel.co%2fwp-content%2fuploads%2f2021%2f06%2ftraditional-greek-food.jpeg&ehk=ABH2YzoU7hph0KZsFD8DoOiE8HQKENrLi8Tf5KtIBlI%3d&risl=&pid=ImgRaw&r=0"
-                     class="hover-image" onmouseover="toggleImage(this, [
+                    class="hover-image" onmouseover="toggleImage(this, [
                         'https://th.bing.com/th/id/R.2bdea2475ce3646f480d4e6bc7b77f72?rik=Kl71W8S64u3PFg&riu=http%3a%2f%2ffravel.co%2fwp-content%2fuploads%2f2021%2f06%2ftraditional-greek-food.jpeg&ehk=ABH2YzoU7hph0KZsFD8DoOiE8HQKENrLi8Tf5KtIBlI%3d&risl=&pid=ImgRaw&r=0',
                         'https://www.chefspencil.com/wp-content/uploads/Souvlakia-960x960.jpeg.webp',
                         'https://www.chefspencil.com/wp-content/uploads/Moussaka.jpeg.webp'
-                     ])">
+                    ])">
             </a>
         </div>
         
