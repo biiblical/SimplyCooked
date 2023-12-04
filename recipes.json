@@ -87,7 +87,36 @@
       "recipeLink": "Indianrecipe.html",
       "image": "img/Indian.jpg"
 
-    }
+    },
+    {
+      "name": "Fideua",
+      "filePath": "Fideua.html",
+      "ingredients": [
+        "langoustines",
+        "prawns",
+        "monkfish",
+        "fideos",
+        "tomato",
+        "sweet paprika",
+        "onion",
+        "garlic",
+        "olive oil",
+        "fish stock"
+      ],
+      "appliances": [
+        "Paella pan"
+      ],
+      "cuisine": "CuisineType",
+      "tags": ["Lunch", "Fishy"],
+      "cookingTime": "60",
+      "difficulty": "Difficult",
+      "glutenFree": "no",
+      "lactoseFree": "yes",
+      "vegetarian": "yes",
+      "served": "hot",
+      "spicy": "1",
+      "price": "2"
+    },
 
     ]
   }
