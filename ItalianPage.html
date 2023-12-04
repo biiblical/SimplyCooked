@@ -1,134 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>SimplyCooked</title>
-    <link rel="stylesheet" href="recipe.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
     <style>
-        ul {
-            list-style: none;
+        /* Reset default margin and padding */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
         }
 
-        ul li::before {
-            content: "\2022";
-            color: #E7BB2C;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
+        /* Apply a box-sizing border-box to all elements */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add styles for the navigation bar */  
+        .topnav {
+            overflow: hidden;
+            background-color: #B77427;
+        }
+
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a img {
+            height: 25px; /* Adjust the height of the logo */
+            margin-right: 8px; /* Add some space to the right of the logo */
+            background-color: transparent;
+            float: left;
+            overflow: hidden;
+        }
+
+        .topnav a:hover {
+            background-color: #d6a856;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #d8af67;
+            color: white;
+        }
+
+        .topnav .login-container {
+            float: right;
+        }
+
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+            width:120px;
+        }
+        
+        .topnav .login-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background-color: #297ba7;
+            color: white;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .topnav .login-container button:hover {
+            background-color: #008ad4;
+        }
+
+        /* Add styles for the main image and text */
+        .main-container {
+            text-align: center;
+        }
+
+        .main_Image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        /* Add styles for columns */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .column {
+            flex: 1;
+            max-width: 300px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .column img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
         }
     </style>
-</head>
 
+    
+
+</head>
 <body>
-    <header>
-        <b class="logo-image"><img src="logoresize.jpg" alt="Avatar"> </b>
-        <!-- Navigation bar goes here -->
-        <div class="topnav">
-            <a href="index.html">HOME</a>
-            <a href="cultural.html">CULTURAL</a>
-            <a href="dishes.html">DISHES</a>
-            <a class="active" href="dessert.html">DESSERT</a>
-            <a href="forum.html">FORUM</a>
-            <a href="contact.html">CONTACT</a>
-            <div class="login-container">
-                <form action="/action_page.php">
-                    <a height="25" style="margin-right: 10px !important;" href="search.html"><img height="25"
-                            src="img/search.png" alt="Search icon"></a>
-                    <input type="text" placeholder="Username" name="username">
-                    <input type="text" placeholder="Password" name="psw">
-                    <button style="margin-left: 10px !important;" type="submit">Login</button>
-                </form>
-            </div>
+
+    <nav class="topnav">
+        <a href="index.html">
+            <img src="logo.jpg" alt="Logo">
+            HOME
+        </a>
+        <a class="active" href="#cultural">CULTURAL</a>
+        <a href="dishes.html">DISHES</a>
+        <a href="dessert.html">DESSERT</a>
+        <a href="forum.html">FORUM</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="main-container">
+        <img class="main_Image" src="ItalianPage.jpg" alt="ItalianPage">
+        <h3 style="color: #97B9B5;">Enjoy a fiesta of fantastic flavours with our incredible collection of Spanish recipes!</h3>
+    </div>
+
+    <hr>
+
+    <h4 style="color: #E7BB2C; text-align: center;">Main Courses</h4>
+
+    <div class="row">
+        <div class="column">
+            <h4 style="color: #E7BB2C;">Fideuá</h4>
+            <p>Fishy</p>
+            <a href="Fideua.html">
+                <img src="fideua.jpg" alt="Fideua">
+            </a>
         </div>
 
-    </header>
+        <div class="column">
+            <h4 style="color: #E7BB2C;">Recipe2</h4>
+            <p>Embark on a delicious journey with our savory Indian recipes! </p>
+            <a href="Indianrecipe.html">
+                <img src="https://www.thecoldwire.com/wp-content/uploads/2020/11/selection-of-indian-food.jpg" alt="Paella">
+            </a>
+        </div>
 
-    <main class="content-wrapper">
-        <article class="recipe">
-            <h1>Classic Tiramisù</h1>
-            <p class="description">Done correctly, a classic tiramisù can be transcendent...</p>
-            <img src="https://static01.nyt.com/images/2017/04/05/dining/05COOKING-TIRAMISU1/05COOKING-TIRAMISU1-master768.jpg?w=1280&q=75"
-                alt="Classic Tiramisù" class="main-image">
-            <br>
+        <div class="column">
+            <h4 style="color: #E7BB2C;">Recipe2</h4>
+            <p>Embark on a delicious journey with our savory Indian recipes! </p>
+            <a href="Indianrecipe.html">
+                <img src="https://www.thecoldwire.com/wp-content/uploads/2020/11/selection-of-indian-food.jpg" alt="Paella">
+            </a>
+        </div>
+    </div>
 
+    <hr>
 
+    <h4 style="color: #E7BB2C; text-align: center;">Desserts</h4>
 
-            <section class="recipe-section">
-                <h3>For the cream</h3>
-                <ul class="ingredients">
-                    <!-- Ingredients list -->
-                    <li>4 large egg yolks</li><br>
-                    <li>½ cup/100 grams granulated sugar, divided </li><br>
-                    <li>¾ cup heavy cream</li><br>
-                    <li>1 cup/227 grams mascarpone (8 ounces)</li>
-                    <br>
-                </ul>
-            </section>
+    <div class="row">
+        <div class="column">
+            <h4 style="color: #E7BB2C;">Tiramisu</h4>
+            <p>Embark on a delicious journey with our savory Indian recipes! </p>
+            <a href="ItalianRecipe.html">
+                <img src="https://static01.nyt.com/images/2017/04/05/dining/05COOKING-TIRAMISU1/05COOKING-TIRAMISU1-master768.jpg?w=1280&q=75" alt="Paella">
+            </a>
+        </div>
+    </div>
 
-            <section class="recipe-section">
-                <h3>For the Assembly</h3>
-                <ul class="ingredients">
-                    <!-- Assembly list -->
-                    <li>1¾ cups good espresso or very strong coffee</li> <br>
-                    <li>2 tablespoons rum or cognac</li><br>
-                    <li>2 tablespoons unsweetened cocoa powder</li><br>
-                    <li>About 24 ladyfingers (from one 7-ounce/200-gram package)</li><br>
-                    <li>1 to 2 ounces bittersweet chocolate, for shaving (optional)</li><br>
-                    <br>
-                </ul>
-            </section>
-
-            <section class="recipe-section">
-                <h3>Preparation</h3>
-                <ol class="instructions">
-                    <!-- Preparation steps -->
-                    <h4>Step 1</h4>
-                    <li>Using an electric mixer in a medium bowl, whip together egg yolks and ¼ cup/50 grams sugar until
-                        very pale yellow and about tripled in volume. A slight ribbon should fall from the beaters (or
-                        whisk attachment) when lifted from the bowl. Transfer mixture to a large bowl, wiping out the
-                        medium bowl used to whip the yolks and set aside.</li>
-                    <h4>Step 2</h4>
-                    <li>In the medium bowl, whip cream and remaining ¼ cup/50 grams sugar until it creates soft-medium
-                        peaks. Add mascarpone and continue to whip until it creates a soft, spreadable mixture with
-                        medium peaks. Gently fold the mascarpone mixture into the sweetened egg yolks until combined.
-                    </li>
-                    <h4>Step 3</h4>
-                    <li>Combine espresso and rum in a shallow bowl and set aside.</li>
-                    <h4>Step 4</h4>
-                    <li>Using a sifter, dust the bottom of a 2-quart baking dish (an 8x8-inch dish, or a 9-inch round
-                        cake pan would also work here) with 1 tablespoon cocoa powder.</li>
-                    <h4>Step 5</h4>
-                    <li>Working one at a time, quickly dip each ladyfinger into the espresso mixture -- they are quite
-                        porous and will fall apart if left in the liquid too long -- and place them rounded side up at
-                        the bottom of the baking dish. Repeat, using half the ladyfingers, until you’ve got an even
-                        layer, breaking the ladyfingers in half as needed to fill in any obvious gaps (a little space in
-                        between is O.K.). Spread half the mascarpone mixture onto the ladyfingers in one even layer.
-                        Repeat with remaining espresso-dipped ladyfingers and mascarpone mixture.</li>
-                    <h4>Step 6</h4>
-                    <li>Dust top layer with remaining tablespoon of cocoa powder. Top with shaved or finely grated
-                        chocolate, if desired.
-                        <h4>Step 7</h4>
-                    <li>Cover with plastic wrap and let chill in the refrigerator for at least 4 hours (if you can wait
-                        24 hours, all the better) before slicing or scooping to serve.</li>
-
-                </ol>
-            </section>
-        </article>
-    </main>
-
-    <footer>
-        <small>
-            <center>&copy;Copyright 2022, SimplyCooked</center>
-        </small>
-    </footer>
 </body>
-
 </html>
