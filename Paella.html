@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SimplyCooked</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: #E7BB2C;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <b class="logo-image"><img src="logoresize.jpg" alt="Avatar"> </b>
+        <!-- Navigation bar goes here -->
+        <div class="topnav">
+            <a href="index.html">HOME</a>
+            <a href="cultural.html">CULTURAL</a>
+            <a href="forum.html">FORUM</a>
+            <a  href="contact.html">CONTACT</a>
+            <div class="login-container">
+                <form action="/action_page.php">
+                    <a height="25" style="margin-right: 10px !important;" href="search.html"><img height="25" src="img/search.png" alt="Search icon"></a>
+                    <input type="text" placeholder="Username" name="username">
+                    <input type="text" placeholder="Password" name="psw">
+                    <button style="margin-left: 10px !important;" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <article class="recipe">
+            <h1>Fideua</h1>
+            <p class="description">Typical Valecian dish, but enjoyed all around Spain. </p>
+            <img src="fideua.jpg"
+                alt="Fideua" class="main-image">
+            <br>
+
+            <section class="recipe-section">
+                <h3>Ingredients (4 people)</h3>
+                <ul class="ingredients">
+                    <li>4 langoustines</li><br>
+                    <li>12 prawns</li><br>
+                    <li>400 grams of monkfish</li><br>
+                    <li>400 grams of fideos</li>
+                    <br>
+                    <li>1 crushed tomato (150 g)</li><br>
+                    <li>Vera dulce (sweet Paprika) (8-10 g)</li><br>
+                    <li>½ a large onion, diced</li><br>
+                    <li>2 cloves of garlic</li><br>
+                    <li>2 eggs</li><br>
+                    <li>200 ml of extra virgin olive oil (approx)</li><br>
+                    <li>Salt</li><br>
+                    <li>1.5 litres of fish stock</li><br>
+                </ul>
+            </section>
+
+
+
+            <section class="recipe-section">
+                <h2>Preparation</h2>
+                <ol class="instructions">
+                    <!-- Preparation steps -->
+                    <h4>Step 1</h4>
+                    <li>Add the prawns and the langoustines 
+                        to the Paella Pan with the hot oil and cook until golden.</li>
+                    <h4>Step 2</h4>
+                    <li>Once golden, after 2-3 minutes
+                         of stirring, remove them from the pan.
+                    </li>
+                    <h4>Step 3</h4>
+                    <li>Add the diced onion and garlic and fry.</li>
+                    <h4>Step 4</h4>
+                    <li>Then add the monkfish and cook until golden.</li>
+                    <h4>Step 5</h4>
+                    <li>Add the crushed tomato and paprika and continue frying, be careful not to burn the paprika.</li>
+                    <h4>Step 6</h4>
+                    <li>Add the fideos and fry for 3 minutes so that the flavours from the other ingredients in 
+                        the pan are absorbed by the fideos.
+                    </li>
+                    <h4>Step 7</h4>
+                    <li>Add 1 litre of stock. The ratio is around just over 2 parts stock to 1 part fideos.</li>
+                    <h4>Step 8</h4>
+                    <li>Cook for 10 minutes on high heat.</li>
+                    <h4>Step 9</h4>
+                    <li>Taste it and add salt if necessary.</li>
+                    <h4>Step 10</h4>
+                    <li>Arrange the prawns and langoustines on top of the pasta in a nice pattern.</li>
+                    <h4>Step 11</h4>
+                    <li>Turn the heat to medium and leave to cook for another 10 minutes. If it looks like the stock is being absorbed 
+                        very quickly, add a little more.</li>
+                    <h4>Step 12</h4>
+                    <li>Take it off the heat and leave to rest uncovered for 5 minutes so that any 
+                        excess stock can be absorbed.</li>
+                </ol>
+                <br>
+                <p>
+                    <center> When ready, it should be a smooth fideua and not look like soupy rice. </center>
+                </p>
+                <center><img
+                        src="fideua.2.jpg"
+                        width="400"></center>
+                <br>
+
+                <h2 style="color: #777b68;">
+                    <center>Buen provecho! </center>
+                </h2>
+            </section>
+        </article>
+    </main>
+
+
+    <footer>
+        <small>&copy; Copyright 2022, SimplyCooked</small>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimplyCooked</title>
+
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply a box-sizing border-box to all elements */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add styles for the navigation bar */  
+        .topnav {
+            overflow: hidden;
+            background-color: #B77427;
+        }
+
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a img {
+            height: 25px; /* Adjust the height of the logo */
+            margin-right: 8px; /* Add some space to the right of the logo */
+            background-color: transparent;
+            float: left;
+            overflow: hidden;
+        }
+
+        .topnav a:hover {
+            background-color: #d6a856;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #d8af67;
+            color: white;
+        }
+
+        .topnav .login-container {
+            float: right;
+        }
+
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+            width:120px;
+        }
+        
+        .topnav .login-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background-color: #297ba7;
+            color: white;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .topnav .login-container button:hover {
+            background-color: #008ad4;
+        }
+
+        /* Add styles for the main image and text */
+        .main-container {
+            text-align: center;
+        }
+
+        .main_Image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        /* Add styles for columns */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .column {
+            flex: 1;
+            max-width: 300px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .column img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+    
+
+</head>
+<body>
+
+    <nav class="topnav">
+        <a href="index.html">
+            <img src="logo.jpg" alt="Logo">
+            HOME
+        </a>
+        <a class="active" href="#cultural">CULTURAL</a>
+        <a href="dishes.html">DISHES</a>
+        <a href="dessert.html">DESSERT</a>
+        <a href="forum.html">FORUM</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="main-container">
+        <img class="main_Image" src="IndianPage.jpg" alt="SpanishPage">
+        <h3 style="color: #97B9B5;">Embark on a delicious journey with our savory Indian recipes! </h3>
+    </div>
+
+    <hr>
+
+
+    <h3 style="color: #E7BB2C; text-align: center;">Main Courses</h3>
+
+    <div class="row">
+        <div class="column">
+            <h4 style="color: #0d0d0d;">Chicken</h4>
+            <a href="Indianrecipe.html">
+                <img src="https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg" 
+                class ="hover-image" onmouseover="toggleImage(this, ['https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg', 'https://chasingthedonkey.b-cdn.net/wp-content/uploads/2021/10/Turkish-Sausage-sucuk-and-egg_Depositphotos_55742119_S-900x600.jpeg','https://chasingthedonkey.b-cdn.net/wp-content/uploads/2019/05/Fis-paprikas-14-900x695.jpg'])">
+                </a>
+            </div>
+
+        <div class="column">
+            <h4 style="color: #0d0d0d;">Recipe2</h4>
+            <a href="Paella.html">
+                <img src="x" alt="Paella">
+            </a>
+        </div>
+
+        <div class="column">
+            <h4 style="color: #0d0d0d;">Recipe2</h4>
+            <a href="Indianrecipe.html">
+                <img src="x" alt="Paella">
+            </a>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3 style="color: #E7BB2C; text-align: center;">Desserts</h3>
+
+    <div class="row">
+        <div class="column">
+            <h4 style="color: #0d0d0d;">Recipe2</h4>
+            <a href="Indianrecipe.html">
+                <img src="https://www.thecoldwire.com/wp-content/uploads/2020/11/selection-of-indian-food.jpg" alt="Paella">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

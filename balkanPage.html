@@ -4,106 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>SimplyCooked</title>
 
     <style>
-         /* add to CSS style file */
+        /* Reset default margin and padding */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
 
-        /* CSS for the hover effect */
-        .column .hover-image {
+        /* Apply a box-sizing border-box to all elements */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add styles for the navigation bar */  
+        .topnav {
+            overflow: hidden;
+            background-color: #B77427;
+        }
+
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a img {
+            height: 25px; /* Adjust the height of the logo */
+            margin-right: 8px; /* Add some space to the right of the logo */
+            background-color: transparent;
+            float: left;
+            overflow: hidden;
+        }
+
+        .topnav a:hover {
+            background-color: #d6a856;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #d8af67;
+            color: white;
+        }
+
+        .topnav .login-container {
+            float: right;
+        }
+
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+            width:120px;
+        }
+        
+        .topnav .login-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background-color: #297ba7;
+            color: white;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .topnav .login-container button:hover {
+            background-color: #008ad4;
+        }
+
+        /* Add styles for the main image and text */
+        .main-container {
+            text-align: center;
+        }
+
+        .main_Image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        /* Add styles for columns */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .column {
+            flex: 1;
+            max-width: 300px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .column img {
             width: 100%;
             height: 200px;
             object-fit: cover;
-            transition: transform 0.5s; /* Smooth transition effect */
         }
-    
-        .column:hover .hover-image {
-            transform: scale(1.2); /* Increase size on hover */
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
         }
     </style>
 
-    <script>
-        // JavaScript for changing images on hover
-        function toggleImage(element, images) {
-        let currentImageIndex = images.indexOf(element.src);
-        currentImageIndex = (currentImageIndex + 1) % images.length; // Toggle to the next image
-        element.src = images[currentImageIndex];
-    }
-    </script>
+    
 
 </head>
 <body>
 
     <nav class="topnav">
-        <a href="index.html">HOME</a>
+        <a href="index.html">
+            <img src="logo.jpg" alt="Logo">
+            HOME
+        </a>
         <a class="active" href="#cultural">CULTURAL</a>
         <a href="dishes.html">DISHES</a>
         <a href="dessert.html">DESSERT</a>
         <a href="forum.html">FORUM</a>
         <a href="contact.html">CONTACT</a>
-    
     </nav>
 
-
-    <div>
-        <center><img class="main_Image" src="https://www.nerdynaut.com/wp-content/uploads/2021/12/World-Cuisine-How-to-Easily-Find-Recipes-from-Other-Cultures.jpg" style="height: 300px;"></center> 
-        
-        <h3 style = " color: #97B9B5;"><center>Choose from our variety of mouth-watering cultural dishes, infused with tradition and history</center></h4>
-    </div>
-
-<hr>
-
-    <h4 style="color: #E7BB2C;"><center>Main Courses</center></h4>
-
-    <div class="row">
-        <div class="column">
-        <h4 style = " color: #E7BB2C;"><center>Bulgarian stuffed peppers</center></h4>
-        <p>Bulgarian Stuffed Peppers (Vegetarian Friendly) – Palneni Chushki Recipe</p>
-        <a href="Balkanrecipe.html">
-            <img src="https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg" 
-            class ="hover-image" onmouseover="toggleImage(this, ['https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg', 'https://chasingthedonkey.b-cdn.net/wp-content/uploads/2021/10/Turkish-Sausage-sucuk-and-egg_Depositphotos_55742119_S-900x600.jpeg','https://chasingthedonkey.b-cdn.net/wp-content/uploads/2019/05/Fis-paprikas-14-900x695.jpg'])">
-            </a>
-        </div>
-        <div class="column">
-            <h4 style = " color: #E7BB2C;"><center>Recipe2</center></h4>
-            <p>Embark on a delicious journey with our savory Indian recipes! </p>
-            <a href="Indianrecipe.html">
-                <img src="https://www.thecoldwire.com/wp-content/uploads/2020/11/selection-of-indian-food.jpg" 
-                class ="hover-image" onmouseover="toggleImage(this, ['https://www.thecoldwire.com/wp-content/uploads/2020/11/selection-of-indian-food.jpg','https://www.tasteofhome.com/wp-content/uploads/2021/01/Curry-769792415.jpg?fit=700%2C700?fit=335,335','https://www.tasteofhome.com/wp-content/uploads/2020/03/Slow-Cooker-Butter-Chicken_EXPS_FT20_192992_F_0204_1-4.jpg?fit=696%2C696?fit=335,335'])">
-            </a>
-        </div>
-        <div class="column">
-            <h4 style = " color: #E7BB2C;"><center>Recipe3</center></h4>
-            <p>Directly from Australia, prepare your favourite dishes like never before!!</p>
-            <a href="Australianrecipe.html">
-                <img src="https://th.bing.com/th/id/R.3cb65c39d2906661457e3c8eeeabbd67?rik=k1%2bBS5F1mZWwqw&pid=ImgRaw&r=0" 
-                class ="hover-image" onmouseover="toggleImage(this, ['https://th.bing.com/th/id/R.3cb65c39d2906661457e3c8eeeabbd67?rik=k1%2bBS5F1mZWwqw&pid=ImgRaw&r=0','https://travelfoodatlas.com/wp-content/uploads/2022/05/lamingtons-768x512.jpg.webp','https://travelfoodatlas.com/wp-content/uploads/2023/04/Witchetty-Grub.jpg.webp','https://travelfoodatlas.com/wp-content/uploads/2021/12/seared-kangaroo-meat-768x532.jpg.webp'])">
-            </a>
-        </div>
-        
-    </div>
-
-
-    <div>
-
+    <div class="main-container">
+        <img class="main_Image" src="BalkanPage.jpg" alt="SpanishPage">
+        <h3 style="color: #97B9B5;">Discover Balkan cuisine with easy and succulent recipes!</h3>
     </div>
 
     <hr>
 
-    <h4 style="color: #E7BB2C;"><center>Desserts</center></h4>
+
+    <h3 style="color: #E7BB2C; text-align: center;">Main Courses</h3>
+
+    <div class="row">
+        <div class="column">
+            <h4 style="color: #0d0d0d;">Bulgarian Stuffed Peppers</h4>
+            <a href="Balkanrecipe.html">
+                <img src="https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg" 
+                class ="hover-image" onmouseover="toggleImage(this, ['https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg', 'https://chasingthedonkey.b-cdn.net/wp-content/uploads/2021/10/Turkish-Sausage-sucuk-and-egg_Depositphotos_55742119_S-900x600.jpeg','https://chasingthedonkey.b-cdn.net/wp-content/uploads/2019/05/Fis-paprikas-14-900x695.jpg'])">
+                </a>
+            </div>
 
         <div class="column">
-            <h4 style="color: #E7BB2C;"><center>Dessert1</center></h4>
-            <p>Try our Greek culinary masterpieces for meals you won’t soon forget!</p>
-            <a href="Greekrecipe.html">
-                <img src="https://th.bing.com/th/id/R.2bdea2475ce3646f480d4e6bc7b77f72?rik=Kl71W8S64u3PFg&riu=http%3a%2f%2ffravel.co%2fwp-content%2fuploads%2f2021%2f06%2ftraditional-greek-food.jpeg&ehk=ABH2YzoU7hph0KZsFD8DoOiE8HQKENrLi8Tf5KtIBlI%3d&risl=&pid=ImgRaw&r=0"
-                    class="hover-image" onmouseover="toggleImage(this, [
-                        'https://th.bing.com/th/id/R.2bdea2475ce3646f480d4e6bc7b77f72?rik=Kl71W8S64u3PFg&riu=http%3a%2f%2ffravel.co%2fwp-content%2fuploads%2f2021%2f06%2ftraditional-greek-food.jpeg&ehk=ABH2YzoU7hph0KZsFD8DoOiE8HQKENrLi8Tf5KtIBlI%3d&risl=&pid=ImgRaw&r=0',
-                        'https://www.chefspencil.com/wp-content/uploads/Souvlakia-960x960.jpeg.webp',
-                        'https://www.chefspencil.com/wp-content/uploads/Moussaka.jpeg.webp'
-                    ])">
+            <h4 style="color: #0d0d0d;">Recipe2</h4>
+            <a href="Paella.html">
+                <img src="x" alt="Paella">
             </a>
         </div>
-        
+
+        <div class="column">
+            <h4 style="color: #0d0d0d;">Recipe2</h4>
+            <a href="Indianrecipe.html">
+                <img src="x" alt="Paella">
+            </a>
+        </div>
     </div>
+
+    <hr>
+
+    <h3 style="color: #E7BB2C; text-align: center;">Desserts</h3>
+
+    <div class="row">
+        <div class="column">
+            <h4 style="color: #0d0d0d;">Recipe2</h4>
+            <a href="Indianrecipe.html">
+                <img src="https://www.thecoldwire.com/wp-content/uploads/2020/11/selection-of-indian-food.jpg" alt="Paella">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
