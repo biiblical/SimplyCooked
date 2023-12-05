@@ -106,14 +106,45 @@
       "appliances": [
         "Paella pan"
       ],
-      "cuisine": "CuisineType",
+      "cuisine": "Spanish",
       "tags": ["Lunch", "Fishy"],
-      "cookingTime": "60",
+      "cookingTime": "60 min",
       "difficulty": "Difficult",
       "glutenFree": "no",
       "lactoseFree": "yes",
       "vegetarian": "yes",
       "served": "hot",
+      "spicy": "1",
+      "price": "2"
+    },
+    {
+      "name": "AussieMeatPie",
+      "filePath": "AussieMeatPie.html",
+      "ingredients": [
+        "Onion",
+        "Beef",
+        "Cornstarch",
+        "Beef stock",
+        "Tomato paste",
+        "Worcestershire sauce",
+        "Vegetable bouillon",
+        "Pie pastry, frozen, thawed",
+        "egg",
+        "ketchup",
+        "olive oil"
+      ],
+      "appliances": [
+        "oven",
+        "Appliance2"
+      ],
+      "cuisine": "Australian",
+      "tags": ["Ground Beef recipes", "Main dishes"],
+      "cookingTime": "50",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "no",
+      "served": "Hot",
       "spicy": "1",
       "price": "2"
     }
