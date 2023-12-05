@@ -4,186 +4,230 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>SimplyCooked</title>
 
     <style>
-        /* Reset default margin and padding */
-        body, h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-        }
+         /* add to CSS style file */
 
-        /* Apply a box-sizing border-box to all elements */
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Add styles for the navigation bar */  
-        .topnav {
-            overflow: hidden;
-            background-color: #B77427;
-        }
-
-
-        .topnav a {
-            float: left;
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        .topnav a img {
-            height: 25px; /* Adjust the height of the logo */
-            margin-right: 8px; /* Add some space to the right of the logo */
-            background-color: transparent;
-            float: left;
-            overflow: hidden;
-        }
-
-        .topnav a:hover {
-            background-color: #d6a856;
-            color: black;
-        }
-
-        .topnav a.active {
-            background-color: #d8af67;
-            color: white;
-        }
-
-        .topnav .login-container {
-            float: right;
-        }
-
-        .topnav input[type=text] {
-            padding: 6px;
-            margin-top: 8px;
-            font-size: 17px;
-            border: none;
-            width:120px;
-        }
-        
-        .topnav .login-container button {
-            float: right;
-            padding: 6px 10px;
-            margin-top: 8px;
-            margin-right: 16px;
-            background-color: #297ba7;
-            color: white;
-            font-size: 17px;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .topnav .login-container button:hover {
-            background-color: #008ad4;
-        }
-
-        /* Add styles for the main image and text */
-        .main-container {
-            text-align: center;
-        }
-
-        .main_Image {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-        }
-
-        /* Add styles for columns */
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .column {
-            flex: 1;
-            max-width: 300px;
-            margin: 10px;
-            text-align: center;
-        }
-
-        .column img {
+        /* CSS for the hover effect */
+        .column .hover-image {
             width: 100%;
             height: 200px;
             object-fit: cover;
+            transition: transform 0.5s; /* Smooth transition effect */
         }
-
-        /* Media query for responsiveness */
-        @media (max-width: 768px) {
-            .column {
-                flex: 100%;
-                max-width: 100%;
-            }
+    
+        .column:hover .hover-image {
+            transform: scale(1.2); /* Increase size on hover */
+    
         }
     </style>
 
-    
+    <script>
+        // JavaScript for changing images on hover
+        function toggleImage(element, images) {
+        let currentImageIndex = images.indexOf(element.src);
+        currentImageIndex = (currentImageIndex + 1) % images.length; // Toggle to the next image
+        element.src = images[currentImageIndex];
+    }
+    </script>
 
 </head>
 <body>
-
+    <b class="logo-image"><img src="logoresize.jpg" alt="Avatar"> </b>
     <nav class="topnav">
-        <a href="index.html">
-            <img src="logo.jpg" alt="Logo">
-            HOME
-        </a>
+        <a href="index.html">HOME</a>
         <a class="active" href="#cultural">CULTURAL</a>
         <a href="dishes.html">DISHES</a>
         <a href="dessert.html">DESSERT</a>
         <a href="forum.html">FORUM</a>
         <a href="contact.html">CONTACT</a>
+    
     </nav>
 
-    <div class="main-container">
-        <img class="main_Image" src="BalkanPage.jpg" alt="SpanishPage">
-        <h3 style="color: #97B9B5;">Enjoy a fiesta of fantastic flavours with our incredible collection of Spanish recipes!</h3>
+
+    <div>
+        <center><img class="main_Image" src="https://www.nerdynaut.com/wp-content/uploads/2021/12/World-Cuisine-How-to-Easily-Find-Recipes-from-Other-Cultures.jpg" style="height: 300px;"></center> 
+        
+        <h3 style="color: #a1521d; text-align: center; font-weight: bold;">
+            <center>Choose from our variety of mouth-watering cultural dishes, infused with tradition and history</center>
+        </h3>
     </div>
 
-    <hr>
-
-
-    <h3 style="color: #E7BB2C; text-align: center;">Main Courses</h3>
+<hr>
 
     <div class="row">
         <div class="column">
-            <h4 style="color: #0d0d0d;">Bulgarian Stuffed Peppers</h4>
-            <a href="Balkanrecipe.html">
-                <img src="https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg" 
-                class ="hover-image" onmouseover="toggleImage(this, ['https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg', 'https://chasingthedonkey.b-cdn.net/wp-content/uploads/2021/10/Turkish-Sausage-sucuk-and-egg_Depositphotos_55742119_S-900x600.jpeg','https://chasingthedonkey.b-cdn.net/wp-content/uploads/2019/05/Fis-paprikas-14-900x695.jpg'])">
-                </a>
-            </div>
-
-        <div class="column">
-            <h4 style="color: #0d0d0d;">Recipe2</h4>
-            <a href="Paella.html">
-                <img src="x" alt="Paella">
+            <h4 style="color: #E7BB2C;"><center>Japanese</center></h4>
+            <p>Japanese dishes, find international culinary inspiration!</p>
+            <a href="JapanesePage.html">
+                <img src="https://img.jakpost.net/c/2017/02/28/2017_02_28_22453_1488267265._large.jpg" 
+                class ="hover-image" onmouseover="toggleImage(this, ['https://img.jakpost.net/c/2017/02/28/2017_02_28_22453_1488267265._large.jpg',
+                'https://lp-cms-production.imgix.net/2020-11/Miso_soup_S.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=35&dpr=3',
+                'https://4.bp.blogspot.com/-Hjd2D32yiyI/VpF8TVvld-I/AAAAAAAAAN4/cq3vIUUWogA/s1600/sushi_0.jpg'])">
             </a>
         </div>
-
         <div class="column">
-            <h4 style="color: #0d0d0d;">Recipe2</h4>
-            <a href="Indianrecipe.html">
-                <img src="x" alt="Paella">
+            <h4 style = " color: #E7BB2C;"><center>Indian</center></h4>
+            <p>Embark on a delicious journey with our savory Indian recipes! </p>
+            <a href="IndianPage.html">
+                <img src=IndianPage.jpg class ="hover-image" onmouseover="toggleImage(this, ['https://www.thecoldwire.com/wp-content/uploads/2020/11/selection-of-indian-food.jpg','https://www.tasteofhome.com/wp-content/uploads/2021/01/Curry-769792415.jpg?fit=700%2C700?fit=335,335','https://www.tasteofhome.com/wp-content/uploads/2020/03/Slow-Cooker-Butter-Chicken_EXPS_FT20_192992_F_0204_1-4.jpg?fit=696%2C696?fit=335,335'])">
             </a>
         </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Australian</center></h4>
+            <p>Directly from Australia, dishes like never before!!</p>
+            <a href="AustralianPage.html">
+                <img src="AustralianPage.jpeg" 
+                class ="hover-image" onmouseover="toggleImage(this, ['https://th.bing.com/th/id/R.3cb65c39d2906661457e3c8eeeabbd67?rik=k1%2bBS5F1mZWwqw&pid=ImgRaw&r=0','https://travelfoodatlas.com/wp-content/uploads/2022/05/lamingtons-768x512.jpg.webp',''])">
+            </a>
+        </div>
+        
     </div>
 
-    <hr>
-
-    <h3 style="color: #E7BB2C; text-align: center;">Desserts</h3>
-
+    
     <div class="row">
         <div class="column">
-            <h4 style="color: #0d0d0d;">Recipe2</h4>
-            <a href="Indianrecipe.html">
-                <img src="https://www.thecoldwire.com/wp-content/uploads/2020/11/selection-of-indian-food.jpg" alt="Paella">
+            <h4 style="color: #E7BB2C;"><center>North African</center></h4>
+            <p>Take your tastebuds on a tour across North Africa with our aromatic recipes!</p>
+            <!-- Use the onmouseover event to trigger image changes -->
+            <a href="NorthAfricanPage.html">
+                    <img src='https://www.specialtyfood.com/media/filer_public/ed/33/ed330342-c726-467a-9112-d54d680b6175/simple_cafe-65.jpg'
+                        class ="hover-image" onmouseover="toggleImage(this, ['https://www.specialtyfood.com/media/filer_public/ed/33/ed330342-c726-467a-9112-d54d680b6175/simple_cafe-65.jpg', 'https://cdn.theculturetrip.com/images/56-3930840-14402702559f9f9a671736435da6971b1275ea0fe2.jpg?s=350x263', 'https://cdn.theculturetrip.com/images/56-3930834-1440270242e952733f36a74d0486058ce5bbfbc347.jpg?s=350x234'])">
+            </a>
+                          
+        </div>
+
+        <div class="column">
+            <h4 style="color: #E7BB2C;"><center>Mexican</center></h4>
+            <p>Add some spice to your life by trying out the best Mexican dishes!</p>
+            <a href="MexicanPage.html">
+                <img src="https://images.vidavegasmagazine.com/wp-media-folder-vida-las-vegas-magazine/wp-content/uploads/2022/10/mexican-festive-food-for-independence-day-independ-2022-09-07-21-08-06-utc.jpg" 
+                     class ="hover-image" onmouseover="toggleImage(this, ['https://th.bing.com/th/id/R.3d6308ca6073c0af0d6962192789078e?rik=9eT7COy5Oojz0A&pid=ImgRaw&r=0','https://travelfoodatlas.com/wp-content/uploads/2020/08/Tacos-Al-Pastor.jpg.webp', 'https://travelfoodatlas.com/wp-content/uploads/2022/04/beef-burrito-768x532.jpg.webp'])">
             </a>
         </div>
+    
+
+
+        <div class="column">
+            <div class="column">
+                <h4 style = " color: #E7BB2C;"><center>Balkan</center></h4>
+                <p>Discover Balkan cuisine with easy and succulent recipes!</p>
+                <a href="BalkanPage.html">
+                  <img src="https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg" 
+                  class ="hover-image" onmouseover="toggleImage(this, ['https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg', 'https://chasingthedonkey.b-cdn.net/wp-content/uploads/2021/10/Turkish-Sausage-sucuk-and-egg_Depositphotos_55742119_S-900x600.jpeg','https://chasingthedonkey.b-cdn.net/wp-content/uploads/2019/05/Fis-paprikas-14-900x695.jpg'])">
+                  </a>
+              </div>
+    </div>
+    
+
+    
+    <div class="row">
+        <div class="column">
+          <h4 style = " color: #E7BB2C;"><center>Korean</center></h4>
+          <p>Immerse yourself in an unforgettable Korean culinary experience </p>
+          <a href="KoreanPage.html">
+            <img src="KoreanPage.jpg" 
+            class ="hover-image" onmouseover="toggleImage(this, ['KoreanPage.jpg'
+            ,'https://www.beyondkimchee.com/wp-content/uploads/2021/01/thumb.jpg','https://www.beyondkimchee.com/wp-content/uploads/2023/10/easy-japchae-thumbnail.jpg'])">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>American</center></h4>
+            <p>Get inspired by our American favourites,from corndogs to cookies!</p>
+            <a href="AmericanPage.html"><img src="AmericanPage.jpg" 
+                class ="hover-image" onmouseover="toggleImage(this, ['AmericanPage.jpg',
+                'Burger.webp',
+                'Cookies.jpg'])">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Chinese</center></h4>
+            <p>Hungry for Chinese? We've got the best recipes waiting for you!</p>
+            <a href="ChinesePage.html">
+                <img src="ChinesePage.jpeg" 
+                class ="hover-image" onmouseover="toggleImage(this, ['ChinesePage.jpeg','Gyozas.webp','Rice.webp'])">
+            </a>
+        </div>
+        
     </div>
 
-</body>
-</html>
+    
+    <div class="row">
+        <div class="column">
+          <h4 style = " color: #E7BB2C;"><center>German</center></h4>
+          <p>Indulge your taste buds in the rich flavors of German cuisine!</p>
+             <a href="GermanPage.html">
+            <img src="GermanPage.jpeg" 
+            class ="hover-image" onmouseover="toggleImage(this, ['https://th.bing.com/th/id/R.0c3c9f5157b8d17d3d45738daff048c6?rik=omgi5A2u%2blfbkQ&pid=ImgRaw&r=0',
+            'https://www.swedishnomad.com/wp-content/images/2018/09/Spatzle.jpg.webp',
+            'https://www.swedishnomad.com/wp-content/images/2019/07/Currywurst.jpg.webp',
+            'https://www.swedishnomad.com/wp-content/images/2018/09/Maultaschen.jpg.webp',
+            'https://www.swedishnomad.com/wp-content/images/2018/09/Flammkuchen.jpg.webp',
+            'https://lh3.googleusercontent.com/WePLa6gulCpK4DZzCUmxFL9dscR7VCnuf4LMfgugFH-uh65q9QGvMKXAlPbw1mA0S5Yrc1SeqRrvbEVvlRKRcpwlOuVN_0PwNieBaE0=w1200-l75',
+            'https://www.einfachbacken.de/sites/einfachbacken.de/files/styles/full_width_tablet_4_3/public/2019-01/schwarzwaelder-kirsch-torte.jpg?h=e0ec072e&itok=SfBt71Zu',
+            'https://cookiesandcups.com/wp-content/uploads/2020/07/applestrudel-5-1000x1000.jpg'])">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Thai</center></h4>
+            <p>Embark on a delicious journey with our savory Thai recipes! </p>
+            <a href="ThaiPage.html">
+                <img src="ThaiPage.jpeg" 
+                class ="hover-image" onmouseover="toggleImage(this, ['https://th.bing.com/th/id/R.9c2651b84d742da43fb7aab53217b3ed?rik=hqsk9h4fUecY%2bQ&pid=ImgRaw&r=0',
+                'https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/tom-yum-goong.webp','https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/thai-green-curry-with-chicken.webp'])">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Italian</center></h4>
+            <p>Savor the irresistible allure of Italian cuisine!</p>
+            <a href="ItalianPage.html">
+                <img src="ItalianPage.jpg" 
+                class ="hover-image" onmouseover="toggleImage(this, [ItalianPage.jpeg, Pizza.jpeg, PannaCotta.jpeg, Lasagna.jpg])">
+            </a>
+        </div>
+        
+    </div>
+
+    
+    <div class="row">
+        <div class="column">
+          <h4 style = " color: #E7BB2C;"><center>Spanish</center></h4>
+          <p>Enjoy a fiesta of fantastic flavours with our incredible collection of Spanish recipes!</p>
+          <a href="SpanishPage.html">
+            <img src="spanishCuisine.webp" 
+            class ="hover-image" onmouseover="toggleImage(this, ['spanishCuisine.webp',
+            'Fideua.jpg',
+            'Paella.jpg'])">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>French</center></h4>
+            <p>Try French cuisine, where every dish tells a story of traditional sophistication!</p>
+            <a href="FrenchPage.html">
+                <img src="FrenchPage.jpg" 
+                class ="hover-image" onmouseover="toggleImage(this, ['https://www.adotrip.com/public/images/events/master_images/5e2ea2db3066f-French_food_festival_Sight_Seeing_Tour.jpg',
+                'https://th.bing.com/th/id/OIP.SjLClMC-p0XNv3kwWbf5jAHaHa?pid=ImgDet&rs=1',
+                'https://www.french-waterways.com/waterpress/wp-content/imagez/5-1000x563.webp',
+                'https://www.french-waterways.com/waterpress/wp-content/imagez/6-1000x563.webp',
+                'https://www.french-waterways.com/waterpress/wp-content/imagez/15-1000x563.webp',
+                'https://www.french-waterways.com/waterpress/wp-content/imagez/18-1000x563.webp'
+            ])">
+            </a>
+        </div>
+
+        <div class="column">
+            <h4 style="color: #E7BB2C;"><center>Greek</center></h4>
+            <p>Try our Greek culinary masterpieces for meals you won’t soon forget!</p>
+             <a href="GreekPage.html">
+                <img src="GermanPage.jpeg"
+                     class="hover-image" onmouseover="toggleImage(this, [
+                        'https://th.bing.com/th/id/R.2bdea2475ce3646f480d4e6bc7b77f72?rik=Kl71W8S64u3PFg&riu=http%3a%2f%2ffravel.co%2fwp-content%2fuploads%2f2021%2f06%2ftraditional-greek-food.jpeg&ehk=ABH2YzoU7hph0KZsFD8DoOiE8HQKENrLi8Tf5KtIBlI%3d&risl=&pid=ImgRaw&r=0',
+                        'https://www.chefspencil.com/wp-content/uploads/Souvlakia-960x960.jpeg.webp',
+                        'https://www.chefspencil.com/wp-content/uploads/Moussaka.jpeg.webp'
+                     ])">
+            </a>
+        </div>
+        
+    </div>
