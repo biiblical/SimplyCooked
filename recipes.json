@@ -147,6 +147,30 @@
       "served": "Hot",
       "spicy": "1",
       "price": "2"
+    },
+    {
+      "name": "Pizza Margherita",
+      "filePath": "PizzaMargherita.html",
+      "ingredients": [
+        "Ingredient1",
+        "Ingredient2",
+        "Ingredient3",
+        "Ingredient4"
+      ],
+      "appliances": [
+        "Appliance1",
+        "Appliance2"
+      ],
+      "cuisine": "Italian",
+      "tags": ["Pizza", "Mozzarella"],
+      "cookingTime": "35",
+      "difficulty": "Easy",
+      "glutenFree": "no",
+      "lactoseFree": "yno",
+      "vegetarian": "yes",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
     }
   ]
 } 
