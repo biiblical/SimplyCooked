@@ -166,9 +166,97 @@
       "cookingTime": "35",
       "difficulty": "Easy",
       "glutenFree": "no",
-      "lactoseFree": "yno",
+      "lactoseFree": "no",
       "vegetarian": "yes",
       "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Lasagna",
+      "filePath": "Lasagna.html",
+      "ingredients": [
+        "Olive oil",
+        "Mince",
+        "Prosciutto",
+        "Tomato sauce",
+        "Beef stock",
+        "Lasagne sheets",
+        "White sauce",
+        "Mozzarella ball"
+      ],
+      "appliances": [
+        "Oven",
+        "frying pan"
+      ],
+      "cuisine": "Italian",
+      "tags": ["Lasagna", "Mince"],
+      "cookingTime": "120 min",
+      "difficulty": "Easy",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "no",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Risotto",
+      "filePath": "Risotto.html",
+      "ingredients": [
+        "onion",
+        "celery",
+        "olive oil",
+        "thyme",
+        "porcini mushrooms",
+        "mixed mushrooms",
+        "organic vegetable stock",
+        "white wine",
+        "parmesan",
+        "unsalted butter"
+      ],
+      "appliances": [
+        "frying pan"
+      ],
+      "cuisine": "Italian",
+      "tags": ["Champignons", "Mushrooms","Rice"],
+      "cookingTime": "40 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Panna Cotta",
+      "filePath": "PannaCotta.html",
+      "ingredients": [
+        "vegetable oil",
+        "milk",
+        "gelatin powder",
+        "heavy cream",
+        "sugar",
+        "salt",
+        "sour cream",
+        "white wine",
+        "vanilla extract",
+        "raspberries",
+        "orange juice",
+        "berries mix"
+      ],
+      "appliances": [
+        ""
+      ],
+      "cuisine": "Italian",
+      "tags": ["Champignons", "Mushrooms","Rice"],
+      "cookingTime": "20 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "yes",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Cold",
       "spicy": "1",
       "price": "1"
     }
