@@ -259,6 +259,37 @@
       "served": "Cold",
       "spicy": "1",
       "price": "1"
+    },
+    {
+      "name": "Maultaschen",
+      "filePath": "Maultaschen.html",
+      "ingredients": [
+        "vegetable oil",
+        "milk",
+        "gelatin powder",
+        "heavy cream",
+        "sugar",
+        "salt",
+        "sour cream",
+        "white wine",
+        "vanilla extract",
+        "raspberries",
+        "orange juice",
+        "berries mix"
+      ],
+      "appliances": [
+        ""
+      ],
+      "cuisine": "German",
+      "tags": ["Pasta"],
+      "cookingTime": "90 min",
+      "difficulty": "Difficult",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "no",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
     }
   ]
 } 
