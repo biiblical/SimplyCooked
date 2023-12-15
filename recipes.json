@@ -383,6 +383,35 @@
       "served": "Hot",
       "spicy": "1",
       "price": "1"
+    },
+    {
+      "name": "Schwarzwälder Kirch Torte",
+      "filePath": "schwarzwälder.html",
+      "ingredients": [
+        " chocolate",
+        "cherries ",
+        " kirchwater",
+        "cream",
+        "eggs",
+        "butter",
+        " vanilla",
+        "cocoa"
+      ],
+      "appliances": [
+        " stove",
+        "oven",
+        "bowl"
+      ],
+      "cuisine": "German",
+      "tags": ["black forest cake ", "cherries", "chocolate"],
+      "cookingTime": "150 min",
+      "difficulty": "Difficult",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Cold",
+      "spicy": "1",
+      "price": "1"
     }
   ]
 } 
