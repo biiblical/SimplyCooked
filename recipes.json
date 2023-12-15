@@ -412,6 +412,109 @@
       "served": "Cold",
       "spicy": "1",
       "price": "1"
+    },
+    {
+      "name": "Flammkuchen",
+      "filePath": "Flammkuchen.html",
+      "ingredients": [
+        "active yeast",
+        "sugar ",
+        " water",
+        "flour",
+        "salt",
+        "olive oil",
+        " oil",
+        "onions",
+        "bacon",
+        "sour cream",
+        "egg yolk",
+        "salt",
+        "pepper",
+        "nutmeg"
+      ],
+      "appliances": [
+        " oven",
+        "skillet",
+        "bowl"
+      ],
+      "cuisine": "German",
+      "tags": ["tarte flambee", "flammkuchen", "german pizza"],
+      "cookingTime": "90 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "no",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Apfel Struedel",
+      "filePath": "ApfelStruedel.html",
+      "ingredients": [
+        " apples",
+        "cinnamon ",
+        " lemon",
+        "lemon juice",
+        "caster sugar",
+        "raisins",
+        " butter",
+        "breadcrumbs",
+        "filo pastry",
+        "icing sugar"
+      ],
+      "appliances": [
+        "oven",
+        "frying pan"
+      ],
+      "cuisine": "German",
+      "tags": ["apple struddel ", "sweet", "dessert"],
+      "cookingTime": "90 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Cold",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Lebkuchen ",
+      "filePath": "Lebkuchen.html",
+      "ingredients": [
+        "honey",
+        "butter ",
+        "flour ",
+        "ground almonds",
+        "baking powder",
+        "bicarbonate of soda",
+        "cinnamon",
+        "ginger",
+        "mixed spice",
+        "nutmeg ",
+        "cloves",
+        "cocoa powder",
+        "orange",
+        "salt ",
+        "icing sugar",
+        "water",
+        "chocolate"
+      ],
+      "appliances": [
+        "oven",
+        "frying pan",
+        "bowl"
+      ],
+      "cuisine": "German",
+      "tags": ["christmas ", "sweet", "xmas"],
+      "cookingTime": "150 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Cold",
+      "spicy": "2",
+      "price": "2"
     }
   ]
 } 
