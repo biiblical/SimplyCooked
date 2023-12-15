@@ -290,6 +290,99 @@
       "served": "Hot",
       "spicy": "1",
       "price": "1"
+    },
+    {
+      "name": "Schnitzel",
+      "filePath": "Schnitzel.html",
+      "ingredients": [
+        "pork steaks",
+        "salt ",
+        "black pepper",
+        "flour",
+        "sugar",
+        "eggs",
+        "breadcrumbs",
+        "white wine",
+        "oil"
+      ],
+      "appliances": [
+        "pan"
+      ],
+      "cuisine": "German",
+      "tags": ["Schnitzel", "simple", "austrian","german"],
+      "cookingTime": "16 min",
+      "difficulty": "Easy",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "no",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Spaetzle",
+      "filePath": "Spaetzle.html",
+      "ingredients": [
+        "pastry flour",
+        "salt ",
+        "sparkling water",
+        "butter",
+        "onions",
+        "eggs",
+        "caster sugar",
+        "emmental",
+        "gruyère",
+        "camembert",
+        "chives"
+      ],
+      "appliances": [
+        "frying pan"
+      ],
+      "cuisine": "German",
+      "tags": ["pasta", "onion", "german"],
+      "cookingTime": "60 min",
+      "difficulty": "Difficult",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Flammkuchen",
+      "filePath": "Flammkuchen.html",
+      "ingredients": [
+        "active yeast",
+        "sugar ",
+        " water",
+        "flour",
+        "salt",
+        "olive oil",
+        " oil",
+        "onions",
+        "bacon",
+        "sour cream",
+        "egg yolk",
+        "salt",
+        "pepper",
+        "nutmeg"
+      ],
+      "appliances": [
+        " oven",
+        "skillet",
+        "bowl"
+      ],
+      "cuisine": "German",
+      "tags": ["tarte flambee", "flammkuchen", "german pizza"],
+      "cookingTime": "90 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "no",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
     }
   ]
 } 
