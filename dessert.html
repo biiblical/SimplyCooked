@@ -27,17 +27,24 @@
 
 </head>
 <body>
-    <b class="logo-image"><img src="logoresize.jpg" alt="Avatar"> </b>
-    <nav class="topnav">
-        <a href="index.html">HOME</a>
-        <a class="active" href="#cultural">CULTURAL</a>
-        <a href="dishes.html">DISHES</a>
-        <a href="dessert.html">DESSERT</a>
-        <a href="forum.html">FORUM</a>
-        <a href="contact.html">CONTACT</a>
-    
-    </nav>
-
+    <header>
+        <b class="logo-image"><img src="logoresize.jpg" alt="Avatar"> </b>
+        <!-- Navigation bar goes here -->
+        <div class="topnav">
+            <a href="index.html">HOME</a>
+            <a class="active" href="cultural.html">CULTURAL</a>
+            <a href="forum.html">FORUM</a>
+            <a  href="contact.html">CONTACT</a>
+            <div class="login-container">
+                <form action="/action_page.php">
+                    <a height="25" style="margin-right: 10px !important;" href="search.html"><img height="25" src="img/search.png" alt="Search icon"></a>
+                    <input type="text" placeholder="Username" name="username">
+                    <input type="text" placeholder="Password" name="psw">
+                    <button style="margin-left: 10px !important;" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </header>
 
 <hr>
 
