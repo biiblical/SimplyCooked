@@ -166,11 +166,355 @@
       "cookingTime": "35",
       "difficulty": "Easy",
       "glutenFree": "no",
-      "lactoseFree": "yno",
+      "lactoseFree": "no",
       "vegetarian": "yes",
       "served": "Hot",
       "spicy": "1",
       "price": "1"
+    },
+    {
+      "name": "Lasagna",
+      "filePath": "Lasagna.html",
+      "ingredients": [
+        "Olive oil",
+        "Mince",
+        "Prosciutto",
+        "Tomato sauce",
+        "Beef stock",
+        "Lasagne sheets",
+        "White sauce",
+        "Mozzarella ball"
+      ],
+      "appliances": [
+        "Oven",
+        "frying pan"
+      ],
+      "cuisine": "Italian",
+      "tags": ["Lasagna", "Mince"],
+      "cookingTime": "120 min",
+      "difficulty": "Easy",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "no",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Risotto",
+      "filePath": "Risotto.html",
+      "ingredients": [
+        "onion",
+        "celery",
+        "olive oil",
+        "thyme",
+        "porcini mushrooms",
+        "mixed mushrooms",
+        "organic vegetable stock",
+        "white wine",
+        "parmesan",
+        "unsalted butter"
+      ],
+      "appliances": [
+        "frying pan"
+      ],
+      "cuisine": "Italian",
+      "tags": ["Champignons", "Mushrooms","Rice"],
+      "cookingTime": "40 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Panna Cotta",
+      "filePath": "PannaCotta.html",
+      "ingredients": [
+        "vegetable oil",
+        "milk",
+        "gelatin powder",
+        "heavy cream",
+        "sugar",
+        "salt",
+        "sour cream",
+        "white wine",
+        "vanilla extract",
+        "raspberries",
+        "orange juice",
+        "berries mix"
+      ],
+      "appliances": [
+        ""
+      ],
+      "cuisine": "Italian",
+      "tags": ["Champignons", "Mushrooms","Rice"],
+      "cookingTime": "20 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "yes",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Cold",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Maultaschen",
+      "filePath": "Maultaschen.html",
+      "ingredients": [
+        "vegetable oil",
+        "milk",
+        "gelatin powder",
+        "heavy cream",
+        "sugar",
+        "salt",
+        "sour cream",
+        "white wine",
+        "vanilla extract",
+        "raspberries",
+        "orange juice",
+        "berries mix"
+      ],
+      "appliances": [
+        ""
+      ],
+      "cuisine": "German",
+      "tags": ["Pasta"],
+      "cookingTime": "90 min",
+      "difficulty": "Difficult",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "no",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Schnitzel",
+      "filePath": "Schnitzel.html",
+      "ingredients": [
+        "pork steaks",
+        "salt ",
+        "black pepper",
+        "flour",
+        "sugar",
+        "eggs",
+        "breadcrumbs",
+        "white wine",
+        "oil"
+      ],
+      "appliances": [
+        "pan"
+      ],
+      "cuisine": "German",
+      "tags": ["Schnitzel", "simple", "austrian","german"],
+      "cookingTime": "16 min",
+      "difficulty": "Easy",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "no",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Spaetzle",
+      "filePath": "Spaetzle.html",
+      "ingredients": [
+        "pastry flour",
+        "salt ",
+        "sparkling water",
+        "butter",
+        "onions",
+        "eggs",
+        "caster sugar",
+        "emmental",
+        "gruyère",
+        "camembert",
+        "chives"
+      ],
+      "appliances": [
+        "frying pan"
+      ],
+      "cuisine": "German",
+      "tags": ["pasta", "onion", "german"],
+      "cookingTime": "60 min",
+      "difficulty": "Difficult",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Flammkuchen",
+      "filePath": "Flammkuchen.html",
+      "ingredients": [
+        "active yeast",
+        "sugar ",
+        " water",
+        "flour",
+        "salt",
+        "olive oil",
+        " oil",
+        "onions",
+        "bacon",
+        "sour cream",
+        "egg yolk",
+        "salt",
+        "pepper",
+        "nutmeg"
+      ],
+      "appliances": [
+        " oven",
+        "skillet",
+        "bowl"
+      ],
+      "cuisine": "German",
+      "tags": ["tarte flambee", "flammkuchen", "german pizza"],
+      "cookingTime": "90 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "no",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Schwarzwälder Kirch Torte",
+      "filePath": "schwarzwälder.html",
+      "ingredients": [
+        " chocolate",
+        "cherries ",
+        " kirchwater",
+        "cream",
+        "eggs",
+        "butter",
+        " vanilla",
+        "cocoa"
+      ],
+      "appliances": [
+        " stove",
+        "oven",
+        "bowl"
+      ],
+      "cuisine": "German",
+      "tags": ["black forest cake ", "cherries", "chocolate"],
+      "cookingTime": "150 min",
+      "difficulty": "Difficult",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Cold",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Flammkuchen",
+      "filePath": "Flammkuchen.html",
+      "ingredients": [
+        "active yeast",
+        "sugar ",
+        " water",
+        "flour",
+        "salt",
+        "olive oil",
+        " oil",
+        "onions",
+        "bacon",
+        "sour cream",
+        "egg yolk",
+        "salt",
+        "pepper",
+        "nutmeg"
+      ],
+      "appliances": [
+        " oven",
+        "skillet",
+        "bowl"
+      ],
+      "cuisine": "German",
+      "tags": ["tarte flambee", "flammkuchen", "german pizza"],
+      "cookingTime": "90 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "no",
+      "served": "Hot",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Apfel Struedel",
+      "filePath": "ApfelStruedel.html",
+      "ingredients": [
+        " apples",
+        "cinnamon ",
+        " lemon",
+        "lemon juice",
+        "caster sugar",
+        "raisins",
+        " butter",
+        "breadcrumbs",
+        "filo pastry",
+        "icing sugar"
+      ],
+      "appliances": [
+        "oven",
+        "frying pan"
+      ],
+      "cuisine": "German",
+      "tags": ["apple struddel ", "sweet", "dessert"],
+      "cookingTime": "90 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Cold",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Lebkuchen ",
+      "filePath": "Lebkuchen.html",
+      "ingredients": [
+        "honey",
+        "butter ",
+        "flour ",
+        "ground almonds",
+        "baking powder",
+        "bicarbonate of soda",
+        "cinnamon",
+        "ginger",
+        "mixed spice",
+        "nutmeg ",
+        "cloves",
+        "cocoa powder",
+        "orange",
+        "salt ",
+        "icing sugar",
+        "water",
+        "chocolate"
+      ],
+      "appliances": [
+        "oven",
+        "frying pan",
+        "bowl"
+      ],
+      "cuisine": "German",
+      "tags": ["christmas ", "sweet", "xmas"],
+      "cookingTime": "150 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Cold",
+      "spicy": "2",
+      "price": "2"
     }
   ]
 } 
