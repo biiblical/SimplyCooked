@@ -515,6 +515,31 @@
       "served": "Cold",
       "spicy": "2",
       "price": "2"
+    },
+    {
+      "name": "Tortilla ",
+      "filePath": "Tortilla.html",
+      "ingredients": [
+        "oil",
+        "potatoes ",
+        "onion ",
+        "eggs",
+        "salt"
+      ],
+      "appliances": [
+        "frying pan",
+        "bowl"
+      ],
+      "cuisine": "Spanish",
+      "tags": ["christmas ", "sweet", "xmas"],
+      "cookingTime": "40 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "Cold",
+      "spicy": "2",
+      "price": "2"
     }
   ]
 } 
