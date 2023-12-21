@@ -527,19 +527,72 @@
         "salt"
       ],
       "appliances": [
+        "frying pan"
+      ],
+      "cuisine": "Spanish",
+      "tags": ["potato ", "easy", "spanish"],
+      "cookingTime": "40 min",
+      "difficulty": "Easy",
+      "glutenFree": "yes",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "warm",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Torrijas ",
+      "filePath": "Torrijas.html",
+      "ingredients": [
+        "french bread",
+        "milk ",
+        "vanilla extract",
+        "eggs",
+        "oil",
+        "sugar",
+        "cinnamon "
+      ],
+      "appliances": [
         "frying pan",
         "bowl"
       ],
       "cuisine": "Spanish",
-      "tags": ["christmas ", "sweet", "xmas"],
-      "cookingTime": "40 min",
+      "tags": ["breakfast ", "dessert", "snack"],
+      "cookingTime": "10 min",
+      "difficulty": "Easy",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "cold",
+      "spicy": "1",
+      "price": "1"
+    },
+    {
+      "name": "Dorayaki ",
+      "filePath": "Dorayaki.html",
+      "ingredients": [
+        "baking soda",
+        "milk ",
+        "flour",
+        "eggs",
+        "vegetable oil",
+        "sugar",
+        "anko "
+      ],
+      "appliances": [
+        "frying pan",
+        "bowl"
+      ],
+      "cuisine": "Spanish",
+      "tags": ["breakfast ", "dessert", "snack"],
+      "cookingTime": "30 min",
       "difficulty": "Intermediate",
       "glutenFree": "no",
       "lactoseFree": "no",
       "vegetarian": "yes",
-      "served": "Cold",
-      "spicy": "2",
-      "price": "2"
+      "served": "cold",
+      "spicy": "1",
+      "price": "1"
     }
   ]
 } 
