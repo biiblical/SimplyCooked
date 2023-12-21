@@ -583,16 +583,76 @@
         "frying pan",
         "bowl"
       ],
-      "cuisine": "Spanish",
+      "cuisine": "Japanese",
       "tags": ["breakfast ", "dessert", "snack"],
       "cookingTime": "30 min",
       "difficulty": "Intermediate",
       "glutenFree": "no",
       "lactoseFree": "no",
       "vegetarian": "yes",
-      "served": "cold",
+      "served": "warm",
       "spicy": "1",
-      "price": "1"
+      "price": "2"
+    },
+    {
+      "name": "MisoSoup ",
+      "filePath": "MisoSoup.html",
+      "ingredients": [
+        "kombu",
+        "bonito flakes ",
+        "wakame seaweed",
+        "white miso paste",
+        "vegetable oil",
+        "tofu",
+        "scallion "
+      ],
+      "appliances": [
+        "frying pan",
+        "bowl"
+      ],
+      "cuisine": "Japanese",
+      "tags": ["breakfast ", "dessert", "snack"],
+      "cookingTime": "30 min",
+      "difficulty": "Intermediate",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "warm",
+      "spicy": "1",
+      "price": "2"
+    },
+    {
+      "name": "Gyozas ",
+      "filePath": "Gyozas.html",
+      "ingredients": [
+        "cornflour",
+        "ready-made gyoza skins",
+        "vegetable oil",
+        "onions",
+        "cabbages",
+        "ginger",
+        "garlic",
+        "water chestnuts",
+        "soy sauce",
+        "oyster sauce",
+        "cooking saké",
+        "sesame oil",
+        "miced pork"
+      ],
+      "appliances": [
+        "frying pan",
+        "bowl"
+      ],
+      "cuisine": "Japanese",
+      "tags": ["breakfast ", "dessert", "snack"],
+      "cookingTime": "50 min",
+      "difficulty": "Difficult",
+      "glutenFree": "no",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "warm",
+      "spicy": "1",
+      "price": "2"
     }
   ]
 } 
