@@ -740,6 +740,30 @@
       "served": "warm",
       "spicy": "1",
       "price": "2"
+    },
+    {
+      "name": "FrenchOnionSoup ",
+      "filePath": "french.html",
+      "ingredients": [
+        "butter",
+        "garlic",
+        "parsley",
+        "miced shallot",
+        "snails"
+      ],
+      "appliances": [
+        "oven"
+      ],
+      "cuisine": "French",
+      "tags": ["snails ", "warm"],
+      "cookingTime": "20 min",
+      "difficulty": "Easy",
+      "glutenFree": "yes",
+      "lactoseFree": "yes",
+      "vegetarian": "yes",
+      "served": "warm",
+      "spicy": "1",
+      "price": "2"
     }
   ]
 } 
