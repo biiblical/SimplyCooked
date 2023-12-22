@@ -653,6 +653,38 @@
       "served": "warm",
       "spicy": "1",
       "price": "2"
+    },
+    {
+      "name": "Sushi ",
+      "filePath": "Sushi.html",
+      "ingredients": [
+        "rice",
+        "vinegar",
+        "sugar",
+        "nori seaweed",
+        "cucumber",
+        "coriander leaves",
+        "avocado",
+        "mascarpone",
+        "smoked salmon",
+        "wasabi paste",
+        "salmon"
+      ],
+      "appliances": [
+        "bamboo mat",
+        "frying pan",
+        "knife"
+      ],
+      "cuisine": "Japanese",
+      "tags": ["sushi ", "healthy", "salmon"],
+      "cookingTime": "60 min",
+      "difficulty": "Easy",
+      "glutenFree": "yes",
+      "lactoseFree": "yes",
+      "vegetarian": "yes",
+      "served": "cold",
+      "spicy": "1",
+      "price": "2"
     }
   ]
 } 
