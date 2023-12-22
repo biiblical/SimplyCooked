@@ -685,6 +685,37 @@
       "served": "cold",
       "spicy": "1",
       "price": "2"
+    },
+    {
+      "name": "Ratatouille ",
+      "filePath": "ratatouille.html",
+      "ingredients": [
+        "onions",
+        "garlic",
+        "aubergines",
+        "courgettes",
+        "peppers",
+        "tomatoes",
+        "basil",
+        "oil",
+        "thyme",
+        "balsamic vinegar",
+        "lemon"
+      ],
+      "appliances": [
+        "frying pan",
+        "oven"
+      ],
+      "cuisine": "French",
+      "tags": ["vegetables ", "healthy", "warm"],
+      "cookingTime": "90 min",
+      "difficulty": "Easy",
+      "glutenFree": "yes",
+      "lactoseFree": "yes",
+      "vegetarian": "yes",
+      "served": "warm",
+      "spicy": "1",
+      "price": "2"
     }
   ]
 } 
