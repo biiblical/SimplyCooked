@@ -724,6 +724,30 @@
         "butter",
         "garlic",
         "parsley",
+        "parmesan cheese",
+        "snails"
+      ],
+      "appliances": [
+        "oven"
+      ],
+      "cuisine": "French",
+      "tags": ["snails ", "warm"],
+      "cookingTime": "25 min",
+      "difficulty": "Easy",
+      "glutenFree": "yes",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "warm",
+      "spicy": "1",
+      "price": "2"
+    },
+    {
+      "name": "FrenchOnionSoup ",
+      "filePath": "FrenchOnionSoup.html",
+      "ingredients": [
+        "butter",
+        "garlic",
+        "parsley",
         "miced shallot",
         "snails"
       ],
@@ -742,25 +766,33 @@
       "price": "2"
     },
     {
-      "name": "FrenchOnionSoup ",
-      "filePath": "french.html",
+      "name": "SteakTartare ",
+      "filePath": "Steaktartare.html",
       "ingredients": [
+        "steak",
+        "baguette",
         "butter",
-        "garlic",
+        "capers",
+        "cornichons",
         "parsley",
-        "miced shallot",
-        "snails"
+        "shallot",
+        "kosher salt",
+        "black pepper",
+        "egg yolks",
+        "Worcestershire sauce",
+        "Dijon mustard",
+        "lemon juice"
       ],
       "appliances": [
         "oven"
       ],
       "cuisine": "French",
-      "tags": ["snails ", "warm"],
-      "cookingTime": "20 min",
-      "difficulty": "Easy",
+      "tags": ["fancy ", "warm"],
+      "cookingTime": "50 min",
+      "difficulty": "difficult",
       "glutenFree": "yes",
       "lactoseFree": "yes",
-      "vegetarian": "yes",
+      "vegetarian": "no",
       "served": "warm",
       "spicy": "1",
       "price": "2"
