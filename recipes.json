@@ -796,6 +796,46 @@
       "served": "warm",
       "spicy": "1",
       "price": "2"
+    },
+    {
+      "name": "KoreanGlassNoodles ",
+      "filePath": "KOREANGLASSNOODLESSTIR-FRY.html",
+      "ingredients": [
+        "stew beef",
+        "sugar",
+        "soy sauce",
+        "sesame oil",
+        "garlic",
+        "ginger",
+        "black pepper",
+        "lotus root ",
+        "water",
+        "soy sauce",
+        "vinegar",
+        " sweet potato noodles",
+        "sea salt",
+        "spinach",
+        "scallion ",
+        "Carrots",
+        "peppers",
+        "shiitake mushrooms",
+        "onion "
+        "eggs"
+        "nori seaweed"
+      ],
+      "appliances": [
+        "pan","oven"
+      ],
+      "cuisine": "korean",
+      "tags": ["Healthy ", "warm"],
+      "cookingTime": "70 min",
+      "difficulty": "difficult",
+      "glutenFree": "yes",
+      "lactoseFree": "yes",
+      "vegetarian": "no",
+      "served": "warm",
+      "spicy": "2",
+      "price": "2"
     }
   ]
 } 
