@@ -4,29 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>SimplyCooked</title>
 
     <style>
-         /* add to CSS style file */
+        /* Reset default margin and padding */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
 
-        /* CSS for the hover effect */
-        .column .hover-image {
+        /* Apply a box-sizing border-box to all elements */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add styles for the navigation bar */  
+        .topnav {
+            overflow: hidden;
+            background-color: #B77427;
+        }
+
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a img {
+            height: 25px; /* Adjust the height of the logo */
+            margin-right: 8px; /* Add some space to the right of the logo */
+            background-color: transparent;
+            float: left;
+            overflow: hidden;
+        }
+
+        .topnav a:hover {
+            background-color: #d6a856;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #d8af67;
+            color: white;
+        }
+
+        .topnav .login-container {
+            float: right;
+        }
+
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+            width:120px;
+        }
+        
+        .topnav .login-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background-color: #297ba7;
+            color: white;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .topnav .login-container button:hover {
+            background-color: #008ad4;
+        }
+
+        /* Add styles for the main image and text */
+        .main-container {
+            text-align: center;
+        }
+
+        .main_Image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        /* Add styles for columns */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .column {
+            flex: 1;
+            max-width: 300px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .column img {
             width: 100%;
             height: 200px;
             object-fit: cover;
-            transition: transform 0.5s; /* Smooth transition effect */
         }
-    
-        .column:hover .hover-image {
-            transform: scale(1.2); /* Increase size on hover */
-    
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
         }
     </style>
 
+    
 
 </head>
 <body>
+
     
 <!-- Include an empty div for the header -->
 <div id="header-container"></div>
@@ -37,27 +136,33 @@
 <script src="header.js"></script>
 
 
-<hr>
+    
+    <div class="main-container">
+        <img class="main_Image" src="dishes.jpeg" alt="ItalianPage">
+        <h3 style="color: #97B9B5;">Main Courses</h3>
+    </div>
+
+    <hr>
 
     <div class="row">
         <div class="column">
-          <h4 style = " color: #E7BB2C;"><center>Tiramisu</center></h4>
-          <a href="ItalianRecipe.html">
-            <img src="Tiramisu.jpg" 
+          <h4 style = " color: #E7BB2C;"><center>Aussie Meat Pie</center></h4>
+          <a href="AussieMeatPie.html">
+            <img src="Aussie.jpeg" 
             class ="hover-image" onmouseover="toggleImage(this, ['https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg', 'https://chasingthedonkey.b-cdn.net/wp-content/uploads/2021/10/Turkish-Sausage-sucuk-and-egg_Depositphotos_55742119_S-900x600.jpeg','https://chasingthedonkey.b-cdn.net/wp-content/uploads/2019/05/Fis-paprikas-14-900x695.jpg'])">
             </a>
         </div>
         <div class="column">
-            <h4 style = " color: #E7BB2C;"><center>Torrijas</center></h4>
-            <a href="Torrijas.html">
-                <img src="Torrijas.jpeg" 
+            <h4 style = " color: #E7BB2C;"><center>Bulgarian Stuffed Peppers</center></h4>
+            <a href="Bulgarian-Stuffed-Peppers.webp">
+                <img src="Balkanrecipe.html" 
                 class ="hover-image" onmouseover="toggleImage(this, ['https://www.thecoldwire.com/wp-content/uploads/2020/11/selection-of-indian-food.jpg','https://www.tasteofhome.com/wp-content/uploads/2021/01/Curry-769792415.jpg?fit=700%2C700?fit=335,335','https://www.tasteofhome.com/wp-content/uploads/2020/03/Slow-Cooker-Butter-Chicken_EXPS_FT20_192992_F_0204_1-4.jpg?fit=696%2C696?fit=335,335'])">
             </a>
         </div>
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
-            <a href="Cheesecake.html">
-                <img src="Cheesecake.jpg" alt="Cheesecake" class ="hover-image" >
+            <a href="Burger.html">
+                <img src="Burger.webp" alt="Cheesecake" class ="hover-image" >
             </a>
         </div>
         
@@ -67,15 +172,15 @@
     <div class="row">
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Cookies</center></h4>
-            <a href="Cookies.html">
-                <img src="Cookies.jpeg" class ="hover-image" alt="Cookies">
+            <a href="Empanadas.html">
+                <img src="Empanadas.webp" class ="hover-image" alt="Cookies">
             </a>
         </div>
 
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Panna cotta</center></h4>
-            <a href="PannaCotta.html">
-                <img src="PannaCotta.jpg" class ="hover-image" alt="Panna Cotta">
+            <a href="Escargots.html">
+                <img src="Escargots.webp" class ="hover-image" alt="Panna Cotta">
             </a>
         </div>
     
@@ -83,8 +188,8 @@
 
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Crepes</center></h4>
-            <a href="Crepes.html">
-                <img src="Crepes.jpeg" class ="hover-image" alt="Crepes">
+            <a href="fideua.html">
+                <img src="fideua.jpg" class ="hover-image" alt="Crepes">
             </a>
         </div>
     </div>
@@ -94,20 +199,20 @@
     <div class="row">
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Lamingtons</center></h4>
-            <a href="Lamingtons.html">
-                <img src="Lamingtons.webp" class ="hover-image" alt="Lamingtons">
+            <a href="Flammkuchen.html">
+                <img src="flammekuechen.webp" class ="hover-image" alt="Lamingtons">
             </a>
         </div>
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Schwarzwälder Kirsch Torte</center></h4>
-            <a href="Schwarzwälder.html">
-                <img src="Schwarzwälder.jpg" class ="hover-image" alt="Schwarzwälder-kirsch-torte">
+            <a href="FrenchOnionSoup.html">
+                <img src="french-onion-soup.jpg" class ="hover-image" alt="Schwarzwälder-kirsch-torte">
             </a>
         </div>
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
-            <a href="Cheesecake.html">
-                <img src="Cheesecake.jpg" class ="hover-image" alt="Cheesecake">
+            <a href="Gyozas.html">
+                <img src="Gyozas.webp" class ="hover-image" alt="Cheesecake">
             </a>
         </div>
         
@@ -117,20 +222,20 @@
     <div class="row">
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Apfel Struedel</center></h4>
-            <a href="ApfelStruedel.html">
-                <img src="ApfelStrudel.webp" class ="hover-image"alt="ApfelStruedel">
+            <a href="Gyros.html">
+                <img src="Gyros.jpg" class ="hover-image"alt="ApfelStruedel">
             </a>
         </div>
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
-            <a href="Cheesecake.html">
-                <img src="Cheesecake.jpeg" alt="Cheesecake">
+            <a href="KOREANGLASSNOODLESSTIR-FRY.html">
+                <img src="KOREAN GLASS NOODLES STIR-FRY.jpeg" alt="Cheesecake">
             </a>
         </div>
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
-            <a href="Cheesecake.html">
-                <img src="Cheesecake.jpeg" alt="Cheesecake">
+            <a href="Lasagna.html">
+                <img src="Lasagna.jpg" alt="Cheesecake">
             </a>
         </div>
         
@@ -140,22 +245,157 @@
     <div class="row">
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
-            <a href="Cheesecake.html">
-                <img src="Cheesecake.jpeg" alt="Cheesecake">
+            <a href="Maultaschen.html">
+                <img src="Maultaschen.jpeg" alt="Cheesecake">
             </a>
         </div>
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
-            <a href="Cheesecake.html">
-                <img src="Cheesecake.jpeg" alt="Cheesecake">
+            <a href="MisoSoup.html">
+                <img src="MisoSoup.webp" alt="Cheesecake">
             </a>
         </div>
 
         <div class="column">
             <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
-            <a href="Cheesecake.html">
-                <img src="Cheesecake.jpeg" alt="Cheesecake">
+            <a href="Moussaka.html">
+                <img src="Moussaka.jpeg" alt="Cheesecake">
             </a>
         </div>
         
     </div>
+
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Apfel Struedel</center></h4>
+            <a href="Gyros.html">
+                <img src="Gyros.jpg" class ="hover-image"alt="ApfelStruedel">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="KOREANGLASSNOODLESSTIR-FRY.html">
+                <img src="KOREAN GLASS NOODLES STIR-FRY.jpeg" alt="Cheesecake">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="Lasagna.html">
+                <img src="Lasagna.jpg" alt="Cheesecake">
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Apfel Struedel</center></h4>
+            <a href="Northafricanrecipe.html">
+                <img src="Rice.webp" class ="hover-image"alt="ApfelStruedel">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="Paella.html">
+                <img src="Paella.jpg" alt="Cheesecake">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="PizzaMargherita.html">
+                <img src="Pizza.jpg" alt="Cheesecake">
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Apfel Struedel</center></h4>
+            <a href="ratatouille.html">
+                <img src="ratatouille.jpeg" class ="hover-image"alt="ApfelStruedel">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="Risotto.html">
+                <img src="Risotto.jpg" alt="Cheesecake">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="Schnitzel.html">
+                <img src="Schnitzel.JPG" alt="Cheesecake">
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Apfel Struedel</center></h4>
+            <a href="Shakshouka.html">
+                <img src="Shakshouka.jpg" class ="hover-image"alt="ApfelStruedel">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="Spaetzle.html">
+                <img src="Spaetzle.jpeg" alt="Cheesecake">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="SteakTartare.html">
+                <img src="SteakTartare.webp" alt="Cheesecake">
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Apfel Struedel</center></h4>
+            <a href="Sushi.html">
+                <img src="Sushi.jpg" class ="hover-image"alt="ApfelStruedel">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="Tortilla.html">
+                <img src="Tortilla.jpg" alt="Cheesecake">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="v.html">
+                <img src="v.jpg" alt="Cheesecake">
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Apfel Struedel</center></h4>
+            <a href="v.html">
+                <img src="v.jpg" class ="hover-image"alt="ApfelStruedel">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="v-FRY.html">
+                <img src="KOREAN GLASS b STIR-FRY.jpeg" alt="Cheesecake">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="v.html">
+                <img src="v.jpg" alt="Cheesecake">
+            </a>
+        </div>
+        
+    </div>
+
+</body>
+</html>
