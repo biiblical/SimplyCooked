@@ -653,6 +653,189 @@
       "served": "warm",
       "spicy": "1",
       "price": "2"
+    },
+    {
+      "name": "Sushi ",
+      "filePath": "Sushi.html",
+      "ingredients": [
+        "rice",
+        "vinegar",
+        "sugar",
+        "nori seaweed",
+        "cucumber",
+        "coriander leaves",
+        "avocado",
+        "mascarpone",
+        "smoked salmon",
+        "wasabi paste",
+        "salmon"
+      ],
+      "appliances": [
+        "bamboo mat",
+        "frying pan",
+        "knife"
+      ],
+      "cuisine": "Japanese",
+      "tags": ["sushi ", "healthy", "salmon"],
+      "cookingTime": "60 min",
+      "difficulty": "Easy",
+      "glutenFree": "yes",
+      "lactoseFree": "yes",
+      "vegetarian": "yes",
+      "served": "cold",
+      "spicy": "1",
+      "price": "2"
+    },
+    {
+      "name": "Ratatouille ",
+      "filePath": "ratatouille.html",
+      "ingredients": [
+        "onions",
+        "garlic",
+        "aubergines",
+        "courgettes",
+        "peppers",
+        "tomatoes",
+        "basil",
+        "oil",
+        "thyme",
+        "balsamic vinegar",
+        "lemon"
+      ],
+      "appliances": [
+        "frying pan",
+        "oven"
+      ],
+      "cuisine": "French",
+      "tags": ["vegetables ", "healthy", "warm"],
+      "cookingTime": "90 min",
+      "difficulty": "Easy",
+      "glutenFree": "yes",
+      "lactoseFree": "yes",
+      "vegetarian": "yes",
+      "served": "warm",
+      "spicy": "1",
+      "price": "2"
+    },
+    {
+      "name": "Escargots ",
+      "filePath": "escargots.html",
+      "ingredients": [
+        "butter",
+        "garlic",
+        "parsley",
+        "parmesan cheese",
+        "snails"
+      ],
+      "appliances": [
+        "oven"
+      ],
+      "cuisine": "French",
+      "tags": ["snails ", "warm"],
+      "cookingTime": "25 min",
+      "difficulty": "Easy",
+      "glutenFree": "yes",
+      "lactoseFree": "no",
+      "vegetarian": "yes",
+      "served": "warm",
+      "spicy": "1",
+      "price": "2"
+    },
+    {
+      "name": "FrenchOnionSoup ",
+      "filePath": "FrenchOnionSoup.html",
+      "ingredients": [
+        "butter",
+        "garlic",
+        "parsley",
+        "miced shallot",
+        "snails"
+      ],
+      "appliances": [
+        "oven"
+      ],
+      "cuisine": "French",
+      "tags": ["snails ", "warm"],
+      "cookingTime": "20 min",
+      "difficulty": "Easy",
+      "glutenFree": "yes",
+      "lactoseFree": "yes",
+      "vegetarian": "yes",
+      "served": "warm",
+      "spicy": "1",
+      "price": "2"
+    },
+    {
+      "name": "SteakTartare ",
+      "filePath": "Steaktartare.html",
+      "ingredients": [
+        "steak",
+        "baguette",
+        "butter",
+        "capers",
+        "cornichons",
+        "parsley",
+        "shallot",
+        "kosher salt",
+        "black pepper",
+        "egg yolks",
+        "Worcestershire sauce",
+        "Dijon mustard",
+        "lemon juice"
+      ],
+      "appliances": [
+        "oven"
+      ],
+      "cuisine": "French",
+      "tags": ["fancy ", "warm"],
+      "cookingTime": "50 min",
+      "difficulty": "difficult",
+      "glutenFree": "yes",
+      "lactoseFree": "yes",
+      "vegetarian": "no",
+      "served": "warm",
+      "spicy": "1",
+      "price": "2"
+    },
+    {
+      "name": "KoreanGlassNoodles ",
+      "filePath": "KOREANGLASSNOODLESSTIR-FRY.html",
+      "ingredients": [
+        "stew beef",
+        "sugar",
+        "soy sauce",
+        "sesame oil",
+        "garlic",
+        "ginger",
+        "black pepper",
+        "lotus root ",
+        "water",
+        "soy sauce",
+        "vinegar",
+        " sweet potato noodles",
+        "sea salt",
+        "spinach",
+        "scallion ",
+        "Carrots",
+        "peppers",
+        "shiitake mushrooms",
+        "onion "
+        "eggs"
+        "nori seaweed"
+      ],
+      "appliances": [
+        "pan","oven"
+      ],
+      "cuisine": "korean",
+      "tags": ["Healthy ", "warm"],
+      "cookingTime": "70 min",
+      "difficulty": "difficult",
+      "glutenFree": "yes",
+      "lactoseFree": "yes",
+      "vegetarian": "no",
+      "served": "warm",
+      "spicy": "2",
+      "price": "2"
     }
   ]
 } 

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimplyCooked</title>
+
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Apply a box-sizing border-box to all elements */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add styles for the navigation bar */  
+        .topnav {
+            overflow: hidden;
+            background-color: #B77427;
+        }
+
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a img {
+            height: 25px; /* Adjust the height of the logo */
+            margin-right: 8px; /* Add some space to the right of the logo */
+            background-color: transparent;
+            float: left;
+            overflow: hidden;
+        }
+
+        .topnav a:hover {
+            background-color: #d6a856;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #d8af67;
+            color: white;
+        }
+
+        .topnav .login-container {
+            float: right;
+        }
+
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+            width:120px;
+        }
+        
+        .topnav .login-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background-color: #297ba7;
+            color: white;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .topnav .login-container button:hover {
+            background-color: #008ad4;
+        }
+
+        /* Add styles for the main image and text */
+        .main-container {
+            text-align: center;
+        }
+
+        .main_Image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        /* Add styles for columns */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .column {
+            flex: 1;
+            max-width: 300px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .column img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+    
+
+</head>
+<body>
+
+    
+<!-- Include an empty div for the header -->
+<div id="header-container"></div>
+
+<!-- The rest of your content goes here -->
+
+<!-- Include the JavaScript file for the header -->
+<script src="header.js"></script>
+
+
+    
+    <div class="main-container">
+        <img class="main_Image" src="dishes.jpeg" alt="ItalianPage">
+        <h3 style="color: #97B9B5;">Main Courses</h3>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="column">
+          <h4 style = " color: #E7BB2C;"><center>Aussie Meat Pie</center></h4>
+          <a href="AussieMeatPie.html">
+            <img src="Aussie.jpeg" 
+            class ="hover-image" onmouseover="toggleImage(this, ['https://www.rakijagrill.com/wp-content/uploads/2019/11/shutterstock_1502599004-1.jpg', 'https://chasingthedonkey.b-cdn.net/wp-content/uploads/2021/10/Turkish-Sausage-sucuk-and-egg_Depositphotos_55742119_S-900x600.jpeg','https://chasingthedonkey.b-cdn.net/wp-content/uploads/2019/05/Fis-paprikas-14-900x695.jpg'])">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Bulgarian Stuffed Peppers</center></h4>
+            <a href="Bulgarian-Stuffed-Peppers.webp">
+                <img src="Bulgarian-Stuffed-Peppers.webp" 
+                class ="hover-image" onmouseover="toggleImage(this, ['https://www.thecoldwire.com/wp-content/uploads/2020/11/selection-of-indian-food.jpg','https://www.tasteofhome.com/wp-content/uploads/2021/01/Curry-769792415.jpg?fit=700%2C700?fit=335,335','https://www.tasteofhome.com/wp-content/uploads/2020/03/Slow-Cooker-Butter-Chicken_EXPS_FT20_192992_F_0204_1-4.jpg?fit=696%2C696?fit=335,335'])">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheeseburger</center></h4>
+            <a href="Burger.html">
+                <img src="Burger.webp" alt="CheeseBurger" class ="hover-image" >
+            </a>
+        </div>
+        
+    </div>
+
+    
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Empanadas</center></h4>
+            <a href="Empanadas.html">
+                <img src="Empanadas.webp" class ="hover-image" alt="Empanadas">
+            </a>
+        </div>
+
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center> Escargots</center></h4>
+            <a href="Escargots.html">
+                <img src="Escargots.webp" class ="hover-image" alt="Escargots">
+            </a>
+        </div>
+    
+
+
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Fideua</center></h4>
+            <a href="fideua.html">
+                <img src="fideua.jpg" class ="hover-image" alt="Fideua">
+            </a>
+        </div>
+    </div>
+    
+
+    
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Flammkuchen</center></h4>
+            <a href="Flammkuchen.html">
+                <img src="flammekuechen.webp" class ="hover-image" alt="Flammkuchen">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>French onion Soup</center></h4>
+            <a href="FrenchOnionSoup.html">
+                <img src="french-onion-soup.jpg" class ="hover-image" alt="French Onion Soup">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Gyozas</center></h4>
+            <a href="Gyozas.html">
+                <img src="Gyozas.webp" class ="hover-image" alt="Gyozas">
+            </a>
+        </div>
+        
+    </div>
+
+    
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center> Gyros</center></h4>
+            <a href="Gyros.html">
+                <img src="Gyros.jpg" class ="hover-image"alt="Gyros">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center> Korean Glass Noodles</center></h4>
+            <a href="KOREANGLASSNOODLESSTIR-FRY.html">
+                <img src="KOREAN GLASS NOODLES STIR-FRY.jpeg" alt="KOREANGLASSNOODLES">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Lasagna</center></h4>
+            <a href="Lasagna.html">
+                <img src="Lasagna.jpg" alt="Lasagna">
+            </a>
+        </div>
+        
+    </div>
+
+    
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Maultaschen</center></h4>
+            <a href="Maultaschen.html">
+                <img src="Maultaschen.jpeg" alt="Maultaschen">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Miso Soup</center></h4>
+            <a href="MisoSoup.html">
+                <img src="MisoSoup.webp" alt="MisoSoup">
+            </a>
+        </div>
+
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Moussaka</center></h4>
+            <a href="Moussaka.html">
+                <img src="Moussaka.jpeg" alt="Moussaka">
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Rice </center></h4>
+            <a href="Northafricanrecipe.html">
+                <img src="Rice.webp" class ="hover-image"alt="Rice">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Paella</center></h4>
+            <a href="Paella.html">
+                <img src="Paella.jpg" alt="Paella">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Pizza Margherita</center></h4>
+            <a href="PizzaMargherita.html">
+                <img src="Pizza.jpg" alt="PizzaMargherita">
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Ratatouille</center></h4>
+            <a href="ratatouille.html">
+                <img src="ratatouille.jpeg" class ="hover-image"alt="Ratatouille">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Risotto</center></h4>
+            <a href="Risotto.html">
+                <img src="Risotto.jpg" alt="Risotto">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Schnitzel</center></h4>
+            <a href="Schnitzel.html">
+                <img src="Schnitzel.JPG" alt="Schnitzel">
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Shakshouka</center></h4>
+            <a href="Shakshouka.html">
+                <img src="Shakshouka.jpg" class ="hover-image"alt="Schakshouka">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Spaetzle</center></h4>
+            <a href="Spaetzle.html">
+                <img src="Spaetzle.jpeg" alt="Spaetzle">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>SteakTartare</center></h4>
+            <a href="SteakTartare.html">
+                <img src="SteakTartare.webp" alt="SteakTartare">
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Sushi </center></h4>
+            <a href="Sushi.html">
+                <img src="Sushi.jpg" class ="hover-image"alt="Sushi">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Tortilla</center></h4>
+            <a href="Tortilla.html">
+                <img src="Tortilla.jpg" alt="Tortilla">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="v.html">
+                <img src="v.jpg" alt="Cheesecake">
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Apfel Struedel</center></h4>
+            <a href="v.html">
+                <img src="v.jpg" class ="hover-image"alt="ApfelStruedel">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="v-FRY.html">
+                <img src="KOREAN GLASS b STIR-FRY.jpeg" alt="Cheesecake">
+            </a>
+        </div>
+        <div class="column">
+            <h4 style = " color: #E7BB2C;"><center>Cheesecake</center></h4>
+            <a href="v.html">
+                <img src="v.jpg" alt="Cheesecake">
+            </a>
+        </div>
+        
+    </div>
+
+</body>
+</html>
