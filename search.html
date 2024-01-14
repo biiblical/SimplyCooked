@@ -9,7 +9,19 @@
     <title>SimplyCooked</title>
 
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
 
+      #footer {
+        padding: 10px;
+        text-align: center;
+        margin-top: auto; /* This will push the footer to the bottom */
+      }
       a 
       { 
         margin-top: 10px;
@@ -59,11 +71,9 @@
         width: 100%;
       }
 
-      #footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 2.5rem;            /* Footer height */
+      #wrapper {
+        min-height:800px;
+        flex: 1; /* This allows the wrapper to take the remaining vertical space */
       }
 
     </style>
@@ -81,9 +91,7 @@
 <!-- Include the JavaScript file for the header -->
 <script src="header _search.js"></script>
 
-    <div>
-
-    </div>
+    <div id="wrapper">
 
     <h1>Recipe Search</h1>
     <hr>
@@ -168,7 +176,7 @@
           tags: ["Indian", "High protein"],
           difficulty: "Intermediate",
           vegetarian: "no",
-          image: "img/Indian.jpg",
+          image: "img/IndianPage.jpg",
           recipeLink: "Indianrecipe.html",
           spicy: 3
         },
@@ -214,17 +222,6 @@
           vegetarian: "no",
           image: "img/GrilledSalmon.jpeg",
           recipeLink: "Seafoodrecipe.html",
-          spicy: 1
-        },
-        {
-          name: "Mushroom Risotto",
-          path: "testpath7",
-          cuisine: "Italian",
-          tags: ["Risotto", "Mushrooms"],
-          difficulty: "Intermediate",
-          vegetarian: "yes",
-          image: "img/MushroomRisotto.jpeg",
-          recipeLink: "Italianrecipe.html",
           spicy: 1
         },
         {
@@ -305,6 +302,205 @@
       recipeLink: "Dessertrecipe.html",
       spicy: 1
     },
+
+    {
+        "name": "Fideua",
+        "path": "Fideua.html",
+        "cuisine": "Spanish",
+        "tags": ["Lunch", "Fishy"],
+        "difficulty": "Difficult",
+        "vegetarian": "yes",
+        "image": "img/fideua.2.jpg",
+        "recipeLink": "Fideua.html",
+        "spicy": 1
+    },
+    {
+        "name": "AussieMeatPie",
+        "path": "AussieMeatPie.html",
+        "cuisine": "Australian",
+        "tags": ["Ground Beef recipes", "Main dishes"],
+        "difficulty": "Intermediate",
+        "vegetarian": "no",
+        "image": "img/Aussie.jpeg",
+        "recipeLink": "AussieMeatPie.html",
+        "spicy": 1
+    },
+    {
+        "name": "Pizza Margherita",
+        "path": "PizzaMargherita.html",
+        "cuisine": "Italian",
+        "tags": ["Pizza", "Mozzarella"],
+        "difficulty": "Easy",
+        "vegetarian": "yes",
+        "image": "img/Pizza.jpg",
+        "recipeLink": "PizzaMargherita.html",
+        "spicy": 1
+    },
+    {
+        "name": "Lasagna",
+        "path": "Lasagna.html",
+        "cuisine": "Italian",
+        "tags": ["Lasagna", "Mince"],
+        "difficulty": "Easy",
+        "vegetarian": "no",
+        "image": "img/Lasagna.jpg",
+        "recipeLink": "Lasagna.html",
+        "spicy": 1
+    },
+    {
+        "name": "Risotto",
+        "path": "Risotto.html",
+        "cuisine": "Italian",
+        "tags": ["Champignons", "Mushrooms", "Rice"],
+        "difficulty": "Intermediate",
+        "vegetarian": "yes",
+        "image": "img/Risotto.jpg",
+        "recipeLink": "Risotto.html",
+        "spicy": 1
+    },
+    {
+        "name": "Panna Cotta",
+        "path": "PannaCotta.html",
+        "cuisine": "Italian",
+        "tags": ["Champignons", "Mushrooms", "Rice"],
+        "difficulty": "Intermediate",
+        "vegetarian": "yes",
+        "image": "img/PannaCotta.jpg",
+        "recipeLink": "PannaCotta.html",
+        "spicy": 1
+    },
+    {
+        "name": "Maultaschen",
+        "path": "Maultaschen.html",
+        "cuisine": "German",
+        "tags": ["Pasta"],
+        "difficulty": "Difficult",
+        "vegetarian": "no",
+        "image": "img/Maultaschen.jpeg",
+        "recipeLink": "Maultaschen.html",
+        "spicy": 1
+    },
+    {
+        "name": "Schnitzel",
+        "path": "Schnitzel.html",
+        "cuisine": "German",
+        "tags": ["Schnitzel", "simple", "austrian", "german"],
+        "difficulty": "Easy",
+        "vegetarian": "no",
+        "image": "img/Schnitzel.jpg",
+        "recipeLink": "Schnitzel.html",
+        "spicy": 1
+    },
+    {
+        "name": "Spaetzle",
+        "path": "Spaetzle.html",
+        "cuisine": "German",
+        "tags": ["pasta", "onion", "german"],
+        "difficulty": "Difficult",
+        "vegetarian": "yes",
+        "image": "img/Spaetzle.jpeg",
+        "recipeLink": "Spaetzle.html",
+        "spicy": 1
+    },
+    {
+        "name": "Flammkuchen",
+        "path": "Flammkuchen.html",
+        "cuisine": "German",
+        "tags": ["tarte flambee", "flammkuchen", "german pizza"],
+        "difficulty": "Intermediate",
+        "vegetarian": "no",
+        "image": "img/flammekuechen.webp",
+        "recipeLink": "Flammkuchen.html",
+        "spicy": 1
+    },
+    {
+        "name": "Schwarzwälder Kirch Torte",
+        "path": "Schwarzwälder.html",
+        "cuisine": "German",
+        "tags": ["black forest cake ", "cherries", "chocolate"],
+        "difficulty": "Difficult",
+        "vegetarian": "yes",
+        "image": "img/Schwarzwälder.jpg",
+        "recipeLink": "Schwarzwälder.html",
+        "spicy": 1
+    },
+    {
+        "name": "Apfel Struedel",
+        "path": "ApfelStruedel.html",
+        "cuisine": "German",
+        "tags": ["apple strudel", "sweet", "dessert"],
+        "difficulty": "Intermediate",
+        "vegetarian": "yes",
+        "image": "img/ApfelStrudel.webp",
+        "recipeLink": "ApfelStruedel.html",
+        "spicy": 1
+    },
+    {
+        "name": "Lebkuchen",
+        "path": "Lebkuchen.html",
+        "cuisine": "German",
+        "tags": ["christmas", "sweet", "xmas"],
+        "difficulty": "Intermediate",
+        "vegetarian": "yes",
+        "image": "img/Lebkuchen.jpeg",
+        "recipeLink": "Lebkuchen.html",
+        "spicy": 2
+    },
+    {
+        "name": "Tortilla",
+        "path": "Tortilla.html",
+        "cuisine": "Spanish",
+        "tags": ["potato", "easy", "spanish"],
+        "difficulty": "Easy",
+        "vegetarian": "yes",
+        "image": "img/Tortilla.jpg",
+        "recipeLink": "Tortilla.html",
+        "spicy": 1
+    },
+    {
+        "name": "Torrijas",
+        "path": "Torrijas.html",
+        "cuisine": "Spanish",
+        "tags": ["breakfast", "dessert", "snack"],
+        "difficulty": "Easy",
+        "vegetarian": "yes",
+        "image": "img/Torrijas.jpeg",
+        "recipeLink": "Torrijas.html",
+        "spicy": 1
+    },
+    {
+        "name": "Dorayaki",
+        "path": "Dorayaki.html",
+        "cuisine": "Japanese",
+        "tags": ["breakfast", "dessert", "snack"],
+        "difficulty": "Intermediate",
+        "vegetarian": "yes",
+        "image": "img/Dorayaki.jpg",
+        "recipeLink": "Dorayaki.html",
+        "spicy": 1
+    },
+    {
+        "name": "Miso Soup",
+        "path": "MisoSoup.html",
+        "cuisine": "Japanese",
+        "tags": ["breakfast", "dessert", "snack"],
+        "difficulty": "Intermediate",
+        "vegetarian": "yes",
+        "image": "img/MisoSoup.webp",
+        "recipeLink": "MisoSoup.html",
+        "spicy": 1
+    },
+    {
+        "name": "Gyozas",
+        "path": "Gyozas.html",
+        "cuisine": "Japanese",
+        "tags": ["breakfast", "dessert", "snack"],
+        "difficulty": "Difficult",
+        "vegetarian": "yes",
+        "image": "img/Gyozas.webp",
+        "recipeLink": "Gyozas.html",
+        "spicy": 1
+    }
       ]; 
 
 
@@ -323,7 +519,7 @@
       const tags = [...new Set(recipes.flatMap(recipe => recipe.tags))];
       const difficultyLevels = [...new Set(recipes.map(recipe => recipe.difficulty))];
   
-      //populateDropdown("cuisine", cuisines);
+      populateDropdown("cuisine", cuisines);
       populateDropdown("tags", tags);
       //populateDropdown("difficulty", difficultyLevels);
   
@@ -379,12 +575,9 @@
   </script>
   
 
-
-
+    </div>
+    <footer id="footer">
+      <small>&copy; Copyright 2022, SimplyCooked - 2023, ALY</small>
+    </footer>
   </body>
-  <footer id="footer">
-    <small> <center>&copy;Copyright 2022, SimplyCooked - 2023, ALY </center> </small>
-  </footer>
-</center>
-
 </html>

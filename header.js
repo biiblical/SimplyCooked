@@ -5,7 +5,7 @@ document.getElementById('header-container').innerHTML = `
     <div class="dropdown">
         <a href="cultural.html" class="nav-button dropdown-btn active">CULTURAL</a>
         <div class="dropdown-content">
-            <a href="main_courses.html">Main Courses</a>
+            <a href="cultural.html">Main Courses</a>
             <a href="desserts.html">Desserts</a>
         </div>
     </div>
