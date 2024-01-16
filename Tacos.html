@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SimplyCooked</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: #E7BB2C;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+
+<body>
+    
+<!-- Include an empty div for the header -->
+<div id="header-container"></div>
+
+<!-- The rest of your content goes here -->
+
+<!-- Include the JavaScript file for the header -->
+<script src="header.js"></script>
+
+
+    <main class="content-wrapper">
+        <article class="recipe">
+            <h1>Tacos</h1>
+            <img src="Tacos.jpeg"
+                alt="Tacos" class="main-image">
+            <br>
+
+
+
+            <section class="recipe-section">
+                <h3>Ingredients (Makes 8 Tacos)</h3>
+                <ul class="ingredients">
+                    <!-- Ingredients list -->
+                    <li>8 small corn or flour tortillas</li><br>
+                    <li>1 pound ground beef or your choice of protein (chicken, pork, tofu)</li><br>
+                    <li>1 tablespoon olive oil</li><br>
+                    <li>1 small onion, finely chopped</li><br>
+                    <li>2 cloves garlic, minced</li><br>
+                    <li>1 packet taco seasoning mix</li><br>
+                    <li>1 cup shredded lettuce</li><br>
+                    <li>1 cup diced tomatoes</li><br>
+                    <li>1 cup shredded cheddar or Mexican blend cheese</li><br>
+                    <li>1/2 cup sour cream</li><br>
+                    <li>Fresh cilantro, chopped (for garnish)</li><br>
+                    <li>Lime wedges (for serving)</li><br>
+                    <li>Hot sauce (optional)</li><br>
+                </ul>
+            </section>
+            
+            <section class="recipe-section">
+                <h3>Preparation</h3>
+                <h4>COOK THE FILLING AND ASSEMBLE TACOS</h4>
+                <ol class="instructions">
+                    <!-- Preparation steps -->
+                    <h4>Step 1</h4>
+                    <li>Heat olive oil in a skillet over medium heat. Add chopped onions and cook until softened.</li>
+                    <h4>Step 2</h4>
+                    <li>Add minced garlic and cook for an additional 30 seconds until fragrant.</li>
+                    <h4>Step 3</h4>
+                    <li>Add ground beef (or your choice of protein) to the skillet and cook until browned. Drain excess fat if necessary.</li>
+                    <h4>Step 4</h4>
+                    <li>Stir in the taco seasoning mix and follow the package instructions for seasoning the meat.</li>
+                    <h4>Step 5</h4>
+                    <li>Warm the tortillas in a dry skillet or microwave according to package instructions.</li>
+                    <h4>Step 6</h4>
+                    <li>Assemble the tacos by placing a spoonful of the seasoned meat onto each tortilla.</li>
+                    <h4>Step 7</h4>
+                    <li>Top with shredded lettuce, diced tomatoes, and shredded cheese.</li>
+                    <h4>Step 8</h4>
+                    <li>Drizzle with sour cream, sprinkle with chopped cilantro, and squeeze lime wedges over the top.</li>
+                    <h4>Step 9</h4>
+                    <li>Optionally, add hot sauce for extra heat.</li>
+                    <h4>Step 10</h4>
+                    <li>Serve the tacos immediately and enjoy!</li>
+                </ol>
+            </section>
+            
+        </article>
+    </main>
+
+    <footer>
+        <small>
+            <center>&copy;Copyright 2022, SimplyCooked</center>
+        </small>
+    </footer>
+</body>
+
+</html>

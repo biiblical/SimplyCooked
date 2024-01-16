@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SimplyCooked</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: #E7BB2C;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+
+<body>
+    
+<!-- Include an empty div for the header -->
+<div id="header-container"></div>
+
+<!-- The rest of your content goes here -->
+
+<!-- Include the JavaScript file for the header -->
+<script src="header.js"></script>
+
+
+    <main class="content-wrapper">
+        <article class="recipe">
+            <h1>Souvlaki</h1>
+            <img src="Souvlaki.jpeg"
+                alt="Souvlaki" class="main-image">
+            <br>
+
+
+
+            <section class="recipe-section">
+                <h3>Ingredients (4 servings)</h3>
+                <ul class="ingredients">
+                    <!-- Ingredients list -->
+                    <li>1.5 pounds boneless, skinless chicken breasts, cut into cubes</li><br>
+                    <li>1/4 cup olive oil</li><br>
+                    <li>3 cloves garlic, minced</li><br>
+                    <li>1 teaspoon dried oregano</li><br>
+                    <li>1 teaspoon dried thyme</li><br>
+                    <li>1 teaspoon ground cumin</li><br>
+                    <li>1 teaspoon paprika</li><br>
+                    <li>1/2 teaspoon onion powder</li><br>
+                    <li>1/4 teaspoon cayenne pepper (optional for heat)</li><br>
+                    <li>Salt and pepper, to taste</li><br>
+                    <li>1/4 cup fresh lemon juice</li><br>
+                    <li>Wooden skewers, soaked in water for 30 minutes</li><br>
+                </ul>
+            </section>
+            
+            <section class="recipe-section">
+                <h3>Preparation</h3>
+                <h4>MARINATE THE CHICKEN</h4>
+                <ol class="instructions">
+                    <!-- Preparation steps -->
+                    <h4>Step 1</h4>
+                    <li>In a bowl, combine olive oil, minced garlic, dried oregano, dried thyme, ground cumin, paprika, onion powder, 
+                        cayenne pepper (if using), salt, and pepper. Mix well.</li>
+                    <h4>Step 2</h4>
+                    <li>Add the chicken cubes to the marinade, making sure each piece is well-coated. Cover and refrigerate for at least 
+                        30 minutes or up to 4 hours for better flavor.</li>
+            
+                <h4>ASSEMBLE AND GRILL THE SOUVLAKI</h4>        
+                    <h4>Step 1</h4>
+                    <li>Preheat the grill to medium-high heat.</li>
+                    <h4>Step 2</h4>
+                    <li>Thread the marinated chicken cubes onto the soaked wooden skewers.</li>
+                    <h4>Step 3</h4>
+                    <li>Brush the grill grates with oil to prevent sticking. Place the skewers on the grill.</li>
+                    <h4>Step 4</h4>
+                    <li>Grill the souvlaki for 12-15 minutes, turning occasionally, until the chicken is cooked through and has a nice 
+                        char on the edges.</li>
+                    <h4>Step 5</h4>
+                    <li>During the last few minutes of grilling, brush the souvlaki with fresh lemon juice for added flavor.</li>
+                    <h4>Step 6</h4>
+                    <li>Remove the skewers from the grill and let them rest for a few minutes before serving.</li>
+                </ol>
+            </section>
+            
+            
+        </article>
+    </main>
+
+    <footer>
+        <small>
+            <center>&copy;Copyright 2022, SimplyCooked</center>
+        </small>
+    </footer>
+</body>
+
+</html>
