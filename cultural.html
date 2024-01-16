@@ -22,6 +22,19 @@
             transform: scale(1.2); /* Increase size on hover */
     
         }
+
+                /* Add styles for the main image and text */
+                .main-container {
+            text-align: center;
+        }
+
+        .main_Image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+
     </style>
 
     <script>
@@ -45,14 +58,10 @@
 <script src="header.js"></script>
 
 
-
-    <div>
-        <center><img class="main_Image" src="https://www.nerdynaut.com/wp-content/uploads/2021/12/World-Cuisine-How-to-Easily-Find-Recipes-from-Other-Cultures.jpg" style="height: 300px;"></center> 
-        
-        <h3 style="color: #a1521d; text-align: center; font-weight: bold;">
-            <center>Choose from our variety of mouth-watering cultural dishes, infused with tradition and history</center>
-        </h3>
-    </div>
+<div class="main-container">
+    <img class="main_Image" src="dishes.jpeg" alt="Random img">
+    <h3 style="color: #97B9B5;">Choose from our variety of mouth-watering cultural dishes, infused with tradition and history!</h3>
+</div>
 
 <hr>
 
