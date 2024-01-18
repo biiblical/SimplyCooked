@@ -10,6 +10,7 @@ document.getElementById('header-container').innerHTML = `
         </div>
     </div>
     <a href="forum.html" class="nav-button active">FORUM</a>
+    <a href="signup.html">Sign Up</a>
     <a href="contact.html" class="nav-button">CONTACT</a>
     <div class="login-container">
         <form action="/action_page.php">
