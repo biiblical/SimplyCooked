@@ -5,5 +5,5 @@ Thereafter we came up with the idea for a cooking website, that enables simple a
 The website offers a variety of dishes, representing the cultures of respective team members. Eron and I for example, are from the Balkans, while Mahnoor is from India, 
 Nia from Costa Rica, and Lulu from North Africa.
 After figuring out the basic layout and purpose of the website, we started coding.
-Along the wway we added more and more functionality and designs, although we have no database. It is purely a presentational website, 
-that could easily be made into a website, applicable in the real world.
+Along the way we added more and more functionality and designs, although we have no database. It is purely a presentational website, 
+that could easily be made applicable in the real world.
